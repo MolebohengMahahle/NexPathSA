@@ -33,6 +33,7 @@ It aims to help users make informed decisions about their education and future c
 The application uses an SQLite database named `nexpathsa.db` to store and manage local application data, including user-related information, opportunities, saved items, and other application records.
 
 **Database file:** [View nexpathsa.db](https://github.com/MolebohengMahahle/NexPathSA/blob/main/app/nexpathsa.db)
+- To view the database, you need to download it and access it using an online database viewer: https://sqliteviewer.app/
 
 ## Requirements
 
