@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "231531047685",
+    "firebase_url": "https://nexpathsa-6eedd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "nexpathsa-6eedd",
+    "storage_bucket": "nexpathsa-6eedd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231531047685:android:846511146c5d30700be56c",
+        "android_client_info": {
+          "package_name": "com.nexpathsa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231531047685-7tl4b26ocb420247c2s273748qdmqvbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpjVDtO3d1RC6p5zHkhTU6wLQt9GgPuYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231531047685-7tl4b26ocb420247c2s273748qdmqvbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

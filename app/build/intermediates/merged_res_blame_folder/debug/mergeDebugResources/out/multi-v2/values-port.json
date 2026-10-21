@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.nexpathsa.app-mergeDebugResources-43:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\s224761382\\.gradle\\caches\\9.5.0\\transforms\\f4c0ff2a3169b5eecb0c443f1bfa1649\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

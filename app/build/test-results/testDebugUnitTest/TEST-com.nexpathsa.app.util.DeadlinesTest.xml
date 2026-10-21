@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nexpathsa.app.util.DeadlinesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-20T11:05:49.760Z" hostname="M104-51" time="0.003">
+  <properties/>
+  <testcase name="labelPrefixesClosedDates" classname="com.nexpathsa.app.util.DeadlinesTest" time="0.001"/>
+  <testcase name="closedOnlyAfterTheWholeClosingDay" classname="com.nexpathsa.app.util.DeadlinesTest" time="0.001"/>
+  <testcase name="openFirstPutsUnknownAfterOpenAndClosedLast" classname="com.nexpathsa.app.util.DeadlinesTest" time="0.001"/>
+  <testcase name="parseReadsOnlyRealDates" classname="com.nexpathsa.app.util.DeadlinesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

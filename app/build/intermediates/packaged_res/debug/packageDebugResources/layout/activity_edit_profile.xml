@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Edit Profile reuses the onboarding form (as the web mock-up does). -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/activity_onboarding" />
+</merge>

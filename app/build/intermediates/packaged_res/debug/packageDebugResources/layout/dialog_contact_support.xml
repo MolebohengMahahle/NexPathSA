@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="24dp">
+
+        <TextView
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell the support team what you need help with." />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="7dp"
+                android:text="Subject" />
+
+            <EditText
+                android:id="@+id/editSupportSubject"
+                style="@style/Input"
+                android:hint="e.g. I cannot save an opportunity"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="7dp"
+                android:text="Message" />
+
+            <EditText
+                android:id="@+id/editSupportMessage"
+                style="@style/Input"
+                android:hint="Describe what happened..."
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textCapSentences"
+                android:gravity="top"
+                android:minLines="5" />
+
+    </LinearLayout>
+</ScrollView>

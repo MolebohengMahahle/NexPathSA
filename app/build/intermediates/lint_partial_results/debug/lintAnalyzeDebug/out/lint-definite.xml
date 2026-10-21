@@ -1,0 +1,4334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.3.1" type="incidents">
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/DocumentReview.java"
+            line="53"
+            column="95"
+            startOffset="2053"
+            endLine="53"
+            endColumn="106"
+            endOffset="2064"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/DocumentReview.java"
+            line="97"
+            column="57"
+            startOffset="4406"
+            endLine="97"
+            endColumn="68"
+            endOffset="4417"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/DocumentsActivity.java"
+            line="279"
+            column="53"
+            startOffset="12845"
+            endLine="279"
+            endColumn="64"
+            endOffset="12856"/>
+    </incident>
+
+    <incident
+        id="DuplicateIncludedIds"
+        severity="warning"
+        message="Duplicate id @+id/stepDescription, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepDescription, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepDescription]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="70"
+            column="17"
+            startOffset="2405"
+            endLine="72"
+            endColumn="63"
+            endOffset="2522"
+            message="Duplicate id @+id/stepDescription, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepDescription, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepDescription]"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step.xml"
+            line="51"
+            column="13"
+            startOffset="1760"
+            endLine="51"
+            endColumn="46"
+            endOffset="1793"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepDescription"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step_last.xml"
+            line="51"
+            column="13"
+            startOffset="1761"
+            endLine="51"
+            endColumn="46"
+            endOffset="1794"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepDescription"/>
+    </incident>
+
+    <incident
+        id="DuplicateIncludedIds"
+        severity="warning"
+        message="Duplicate id @+id/stepLine, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepLine, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepLine]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="70"
+            column="17"
+            startOffset="2405"
+            endLine="72"
+            endColumn="63"
+            endOffset="2522"
+            message="Duplicate id @+id/stepLine, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepLine, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepLine]"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step.xml"
+            line="25"
+            column="13"
+            startOffset="875"
+            endLine="25"
+            endColumn="39"
+            endOffset="901"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepLine"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step_last.xml"
+            line="25"
+            column="13"
+            startOffset="875"
+            endLine="25"
+            endColumn="39"
+            endOffset="901"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepLine"/>
+    </incident>
+
+    <incident
+        id="DuplicateIncludedIds"
+        severity="warning"
+        message="Duplicate id @+id/stepNumber, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepNumber, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepNumber]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="70"
+            column="17"
+            startOffset="2405"
+            endLine="72"
+            endColumn="63"
+            endOffset="2522"
+            message="Duplicate id @+id/stepNumber, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepNumber, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepNumber]"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step.xml"
+            line="15"
+            column="13"
+            startOffset="520"
+            endLine="15"
+            endColumn="41"
+            endOffset="548"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepNumber"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step_last.xml"
+            line="15"
+            column="13"
+            startOffset="520"
+            endLine="15"
+            endColumn="41"
+            endOffset="548"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepNumber"/>
+    </incident>
+
+    <incident
+        id="DuplicateIncludedIds"
+        severity="warning"
+        message="Duplicate id @+id/stepTitle, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepTitle, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepTitle]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="70"
+            column="17"
+            startOffset="2405"
+            endLine="72"
+            endColumn="63"
+            endOffset="2522"
+            message="Duplicate id @+id/stepTitle, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepTitle, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepTitle]"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step.xml"
+            line="43"
+            column="13"
+            startOffset="1477"
+            endLine="43"
+            endColumn="40"
+            endOffset="1504"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepTitle"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step_last.xml"
+            line="43"
+            column="13"
+            startOffset="1478"
+            endLine="43"
+            endColumn="40"
+            endOffset="1505"
+            message="Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepTitle"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 37"
+            oldString="34"
+            replacement="37"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="14"
+            column="9"
+            startOffset="305"
+            endLine="14"
+            endColumn="21"
+            endOffset="317"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of `compileSdk` than 34 is available: 37">
+        <fix-replace
+            description="Set compileSdk to 37"
+            oldString="34"
+            replacement="37"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="9"
+            column="5"
+            startOffset="202"
+            endLine="9"
+            endColumn="18"
+            endOffset="215"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.8.0">
+        <fix-replace
+            description="Change to 1.8.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.8.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="33"
+            column="20"
+            startOffset="727"
+            endLine="33"
+            endColumn="56"
+            endOffset="763"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.11.0 is available: 1.14.0">
+        <fix-replace
+            description="Change to 1.14.0"
+            family="Update versions"
+            oldString="1.11.0"
+            replacement="1.14.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="34"
+            column="20"
+            startOffset="783"
+            endLine="34"
+            endColumn="65"
+            endOffset="828"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.2">
+        <fix-replace
+            description="Change to 2.2.2"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="35"
+            column="20"
+            startOffset="848"
+            endLine="35"
+            endColumn="70"
+            endOffset="898"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.recyclerview:recyclerview than 1.3.2 is available: 1.4.0">
+        <fix-replace
+            description="Change to 1.4.0"
+            family="Update versions"
+            oldString="1.3.2"
+            replacement="1.4.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="36"
+            column="20"
+            startOffset="918"
+            endLine="36"
+            endColumn="62"
+            endOffset="960"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.exifinterface:exifinterface than 1.3.7 is available: 1.4.2">
+        <fix-replace
+            description="Change to 1.4.2"
+            family="Update versions"
+            oldString="1.3.7"
+            replacement="1.4.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="38"
+            column="20"
+            startOffset="1034"
+            endLine="38"
+            endColumn="64"
+            endOffset="1078"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.swiperefreshlayout:swiperefreshlayout than 1.1.0 is available: 1.2.0">
+        <fix-replace
+            description="Change to 1.2.0"
+            family="Update versions"
+            oldString="1.1.0"
+            replacement="1.2.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="39"
+            column="20"
+            startOffset="1098"
+            endLine="39"
+            endColumn="74"
+            endOffset="1152"/>
+    </incident>
+
+    <incident
+        id="UseCompatTextViewDrawableXml"
+        severity="warning"
+        message="Use `app:drawableStartCompat` instead of `android:drawableStart`">
+        <fix-composite
+            description="Set drawableStartCompat=&quot;@drawable/bg_dot&quot; and Delete drawableStart">
+            <fix-attribute
+                description="Set drawableStartCompat=&quot;@drawable/bg_dot&quot;"
+                namespace="http://schemas.android.com/apk/res-auto"
+                attribute="drawableStartCompat"
+                value="@drawable/bg_dot"/>
+            <fix-attribute
+                description="Delete drawableStart"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="drawableStart"/>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_profile_menu_row.xml"
+            line="55"
+            column="9"
+            startOffset="1944"
+            endLine="55"
+            endColumn="49"
+            endOffset="1984"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="95"
+            column="14"
+            startOffset="3254"
+            endLine="95"
+            endColumn="26"
+            endOffset="3266"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="122"
+            column="14"
+            startOffset="4323"
+            endLine="122"
+            endColumn="26"
+            endOffset="4335"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="311"
+            column="14"
+            startOffset="13602"
+            endLine="311"
+            endColumn="26"
+            endOffset="13614"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="347"
+            column="14"
+            startOffset="15067"
+            endLine="347"
+            endColumn="26"
+            endOffset="15079"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="48"
+            column="18"
+            startOffset="1767"
+            endLine="48"
+            endColumn="30"
+            endOffset="1779"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="112"
+            column="18"
+            startOffset="4787"
+            endLine="112"
+            endColumn="30"
+            endOffset="4799"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step.xml"
+            line="3"
+            column="2"
+            startOffset="102"
+            endLine="3"
+            endColumn="14"
+            endOffset="114"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_journey_step_last.xml"
+            line="3"
+            column="2"
+            startOffset="102"
+            endLine="3"
+            endColumn="14"
+            endOffset="114"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="3"
+            column="2"
+            startOffset="115"
+            endLine="3"
+            endColumn="14"
+            endOffset="127"/>
+    </incident>
+
+    <incident
+        id="NestedWeights"
+        severity="warning"
+        message="Nested weights are bad for performance">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="117"
+            column="13"
+            startOffset="4615"
+            endLine="117"
+            endColumn="38"
+            endOffset="4640"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_alerts.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="38"
+            endOffset="291"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="7"
+            column="5"
+            startOffset="342"
+            endLine="7"
+            endColumn="43"
+            endOffset="380"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_cv_builder.xml"
+            line="6"
+            column="5"
+            startOffset="297"
+            endLine="6"
+            endColumn="43"
+            endOffset="335"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="7"
+            column="5"
+            startOffset="355"
+            endLine="7"
+            endColumn="43"
+            endOffset="393"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme_NexPathSA_White`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="5"
+            column="5"
+            startOffset="251"
+            endLine="5"
+            endColumn="38"
+            endOffset="284"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme_NexPathSA_White`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="6"
+            column="5"
+            startOffset="251"
+            endLine="6"
+            endColumn="38"
+            endOffset="284"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_profile.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme_NexPathSA_White`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="5"
+            column="5"
+            startOffset="251"
+            endLine="5"
+            endColumn="38"
+            endOffset="284"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_settings_page.xml"
+            line="6"
+            column="5"
+            startOffset="258"
+            endLine="6"
+            endColumn="43"
+            endOffset="296"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme_NexPathSA_White`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="5"
+            column="5"
+            startOffset="195"
+            endLine="5"
+            endColumn="38"
+            endOffset="228"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/navy` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="7"
+            column="5"
+            startOffset="311"
+            endLine="7"
+            endColumn="37"
+            endOffset="343"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/navy` with a theme that also paints a background (inferred theme is `@style/Theme.NexPathSA`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_page_title.xml"
+            line="7"
+            column="5"
+            startOffset="369"
+            endLine="7"
+            endColumn="37"
+            endOffset="401"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="18"
+            column="10"
+            startOffset="672"
+            endLine="18"
+            endColumn="22"
+            endOffset="684"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="18"
+            column="10"
+            startOffset="672"
+            endLine="18"
+            endColumn="22"
+            endOffset="684"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="3"
+            column="1"
+            startOffset="148"
+            endLine="6"
+            endColumn="17"
+            endOffset="376"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive roundIcon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="3"
+            column="1"
+            startOffset="148"
+            endLine="6"
+            endColumn="17"
+            endOffset="376"/>
+    </incident>
+
+    <incident
+        id="IconMissingDensityFolder"
+        severity="warning"
+        message="Missing density variation folders in `src\main\res`: drawable-mdpi, drawable-xhdpi, drawable-xxhdpi">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="The view name (`@+id/editProfileEmail`) suggests this is an e-mail address, but it does not include &apos;`textEmail`&apos; in the `inputType`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="105"
+            column="17"
+            startOffset="3996"
+            endLine="105"
+            endColumn="41"
+            endOffset="4020"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="101"
+            column="17"
+            startOffset="3818"
+            endLine="101"
+            endColumn="51"
+            endOffset="3852"
+            message="id defined here"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="107"
+            column="29"
+            startOffset="4982"
+            endLine="107"
+            endColumn="52"
+            endOffset="5005"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="69"
+            column="29"
+            startOffset="2792"
+            endLine="69"
+            endColumn="52"
+            endOffset="2815"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="97"
+            column="29"
+            startOffset="4157"
+            endLine="97"
+            endColumn="52"
+            endOffset="4180"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="133"
+            column="29"
+            startOffset="5816"
+            endLine="133"
+            endColumn="52"
+            endOffset="5839"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="161"
+            column="29"
+            startOffset="7188"
+            endLine="161"
+            endColumn="52"
+            endOffset="7211"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_profile_menu_row.xml"
+            line="62"
+            column="9"
+            startOffset="2211"
+            endLine="62"
+            endColumn="32"
+            endOffset="2234"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="88"
+            column="14"
+            startOffset="3401"
+            endLine="88"
+            endColumn="22"
+            endOffset="3409"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_campus_photo.xml"
+            line="27"
+            column="10"
+            startOffset="982"
+            endLine="27"
+            endColumn="19"
+            endOffset="991"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ApplyActivity.java"
+            line="98"
+            column="64"
+            startOffset="3788"
+            endLine="98"
+            endColumn="101"
+            endOffset="3825"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ApplyActivity.java"
+            line="98"
+            column="64"
+            startOffset="3788"
+            endLine="98"
+            endColumn="76"
+            endOffset="3800"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CareersActivity.java"
+            line="147"
+            column="27"
+            startOffset="5794"
+            endLine="147"
+            endColumn="88"
+            endOffset="5855"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CourseDetailActivity.java"
+            line="96"
+            column="40"
+            startOffset="3951"
+            endLine="96"
+            endColumn="80"
+            endOffset="3991"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CourseDetailActivity.java"
+            line="96"
+            column="40"
+            startOffset="3951"
+            endLine="96"
+            endColumn="50"
+            endOffset="3961"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CourseDetailActivity.java"
+            line="179"
+            column="25"
+            startOffset="7645"
+            endLine="179"
+            endColumn="64"
+            endOffset="7684"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CourseDetailActivity.java"
+            line="188"
+            column="29"
+            startOffset="8089"
+            endLine="188"
+            endColumn="101"
+            endOffset="8161"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CvBuilderActivity.java"
+            line="183"
+            column="37"
+            startOffset="9763"
+            endLine="183"
+            endColumn="80"
+            endOffset="9806"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CvBuilderActivity.java"
+            line="288"
+            column="24"
+            startOffset="14860"
+            endLine="288"
+            endColumn="32"
+            endOffset="14868"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CvBuilderActivity.java"
+            line="317"
+            column="28"
+            startOffset="16146"
+            endLine="317"
+            endColumn="48"
+            endOffset="16166"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/CvBuilderActivity.java"
+            line="317"
+            column="42"
+            startOffset="16160"
+            endLine="317"
+            endColumn="47"
+            endOffset="16165"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/DocumentsActivity.java"
+            line="151"
+            column="21"
+            startOffset="6405"
+            endLine="152"
+            endColumn="55"
+            endOffset="6542"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ExploreActivity.java"
+            line="162"
+            column="71"
+            startOffset="6113"
+            endLine="162"
+            endColumn="95"
+            endOffset="6137"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ExploreActivity.java"
+            line="203"
+            column="75"
+            startOffset="7776"
+            endLine="203"
+            endColumn="106"
+            endOffset="7807"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ExploreActivity.java"
+            line="225"
+            column="66"
+            startOffset="8887"
+            endLine="225"
+            endColumn="91"
+            endOffset="8912"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ExploreActivity.java"
+            line="225"
+            column="83"
+            startOffset="8904"
+            endLine="225"
+            endColumn="91"
+            endOffset="8912"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ExploreActivity.java"
+            line="245"
+            column="22"
+            startOffset="9845"
+            endLine="245"
+            endColumn="53"
+            endOffset="9876"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ExploreActivity.java"
+            line="245"
+            column="22"
+            startOffset="9845"
+            endLine="245"
+            endColumn="35"
+            endOffset="9858"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/ExploreActivity.java"
+            line="245"
+            column="45"
+            startOffset="9868"
+            endLine="245"
+            endColumn="53"
+            endOffset="9876"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/InstitutionDetailActivity.java"
+            line="83"
+            column="62"
+            startOffset="2918"
+            endLine="84"
+            endColumn="57"
+            endOffset="3006"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/InstitutionDetailActivity.java"
+            line="109"
+            column="70"
+            startOffset="4337"
+            endLine="110"
+            endColumn="45"
+            endOffset="4426"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/InstitutionDetailActivity.java"
+            line="110"
+            column="23"
+            startOffset="4404"
+            endLine="110"
+            endColumn="45"
+            endOffset="4426"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/InstitutionDetailActivity.java"
+            line="115"
+            column="45"
+            startOffset="4759"
+            endLine="115"
+            endColumn="72"
+            endOffset="4786"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/util/InstitutionViews.java"
+            line="48"
+            column="62"
+            startOffset="2120"
+            endLine="48"
+            endColumn="108"
+            endOffset="2166"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/MainActivity.java"
+            line="116"
+            column="66"
+            startOffset="4518"
+            endLine="116"
+            endColumn="92"
+            endOffset="4544"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/MainActivity.java"
+            line="170"
+            column="70"
+            startOffset="7078"
+            endLine="170"
+            endColumn="104"
+            endOffset="7112"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/MainActivity.java"
+            line="170"
+            column="70"
+            startOffset="7078"
+            endLine="170"
+            endColumn="81"
+            endOffset="7089"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/MainActivity.java"
+            line="176"
+            column="64"
+            startOffset="7356"
+            endLine="176"
+            endColumn="88"
+            endOffset="7380"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/MainActivity.java"
+            line="176"
+            column="80"
+            startOffset="7372"
+            endLine="176"
+            endColumn="88"
+            endOffset="7380"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/MarksActivity.java"
+            line="320"
+            column="22"
+            startOffset="14458"
+            endLine="320"
+            endColumn="94"
+            endOffset="14530"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/NotificationSettingsActivity.java"
+            line="67"
+            column="22"
+            startOffset="2937"
+            endLine="67"
+            endColumn="49"
+            endOffset="2964"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/OnboardingActivity.java"
+            line="139"
+            column="62"
+            startOffset="5548"
+            endLine="139"
+            endColumn="76"
+            endOffset="5562"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/OnboardingActivity.java"
+            line="140"
+            column="63"
+            startOffset="5627"
+            endLine="140"
+            endColumn="82"
+            endOffset="5646"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/OnboardingActivity.java"
+            line="142"
+            column="21"
+            startOffset="5735"
+            endLine="142"
+            endColumn="81"
+            endOffset="5795"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/OnboardingActivity.java"
+            line="145"
+            column="63"
+            startOffset="5988"
+            endLine="145"
+            endColumn="77"
+            endOffset="6002"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/OnboardingActivity.java"
+            line="172"
+            column="55"
+            startOffset="7098"
+            endLine="172"
+            endColumn="89"
+            endOffset="7132"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/util/OpportunityCards.java"
+            line="53"
+            column="64"
+            startOffset="2085"
+            endLine="53"
+            endColumn="96"
+            endOffset="2117"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/util/OpportunityCards.java"
+            line="78"
+            column="69"
+            startOffset="3562"
+            endLine="78"
+            endColumn="92"
+            endOffset="3585"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/util/OpportunityCards.java"
+            line="82"
+            column="38"
+            startOffset="3739"
+            endLine="82"
+            endColumn="63"
+            endOffset="3764"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/util/OpportunityCards.java"
+            line="85"
+            column="38"
+            startOffset="3880"
+            endLine="85"
+            endColumn="60"
+            endOffset="3902"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/OpportunityDetailActivity.java"
+            line="101"
+            column="61"
+            startOffset="4281"
+            endLine="101"
+            endColumn="114"
+            endOffset="4334"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/util/Ui.java"
+            line="230"
+            column="22"
+            startOffset="10256"
+            endLine="230"
+            endColumn="52"
+            endOffset="10286"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/VerifyEmailActivity.java"
+            line="109"
+            column="32"
+            startOffset="3874"
+            endLine="109"
+            endColumn="88"
+            endOffset="3930"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/VerifyEmailActivity.java"
+            line="109"
+            column="65"
+            startOffset="3907"
+            endLine="109"
+            endColumn="80"
+            endOffset="3922"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/VerifyEmailActivity.java"
+            line="109"
+            column="32"
+            startOffset="3874"
+            endLine="109"
+            endColumn="61"
+            endOffset="3903"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nexpathsa/app/VerifyEmailActivity.java"
+            line="114"
+            column="32"
+            startOffset="4038"
+            endLine="114"
+            endColumn="59"
+            endOffset="4065"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Complete the application below. The submission is stored with your NexPathSA account on this device.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="43"
+            column="21"
+            startOffset="1565"
+            endLine="43"
+            endColumn="136"
+            endOffset="1680"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Full name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="51"
+            column="17"
+            startOffset="1976"
+            endLine="51"
+            endColumn="41"
+            endOffset="2000"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Your full name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="57"
+            column="17"
+            startOffset="2133"
+            endLine="57"
+            endColumn="46"
+            endOffset="2162"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="68"
+            column="17"
+            startOffset="2576"
+            endLine="68"
+            endColumn="37"
+            endOffset="2596"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Your email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="74"
+            column="17"
+            startOffset="2730"
+            endLine="74"
+            endColumn="42"
+            endOffset="2755"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Phone number&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="85"
+            column="17"
+            startOffset="3158"
+            endLine="85"
+            endColumn="44"
+            endOffset="3185"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;e.g. 071 234 5678&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="91"
+            column="17"
+            startOffset="3319"
+            endLine="91"
+            endColumn="49"
+            endOffset="3351"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Cover letter / motivation&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="102"
+            column="17"
+            startOffset="3743"
+            endLine="102"
+            endColumn="57"
+            endOffset="3783"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tell the provider why you are interested and why you should be considered.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="108"
+            column="17"
+            startOffset="3917"
+            endLine="108"
+            endColumn="106"
+            endOffset="4006"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;CV / supporting document&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="121"
+            column="17"
+            startOffset="4500"
+            endLine="121"
+            endColumn="56"
+            endOffset="4539"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;CHOOSE FILE&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="134"
+            column="25"
+            startOffset="5077"
+            endLine="134"
+            endColumn="51"
+            endOffset="5103"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No file selected&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="145"
+            column="25"
+            startOffset="5597"
+            endLine="145"
+            endColumn="56"
+            endOffset="5628"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;I confirm that the information I provide is accurate and I consent to this application being recorded by NexPathSA.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="156"
+            column="21"
+            startOffset="6096"
+            endLine="156"
+            endColumn="151"
+            endOffset="6226"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;SUBMIT APPLICATION&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_apply.xml"
+            line="165"
+            column="21"
+            startOffset="6595"
+            endLine="165"
+            endColumn="54"
+            endOffset="6628"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Your Career Journey&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="42"
+            column="21"
+            startOffset="1550"
+            endLine="42"
+            endColumn="55"
+            endOffset="1584"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Recommended for you&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_career_guidance.xml"
+            line="90"
+            column="21"
+            startOffset="3167"
+            endLine="90"
+            endColumn="55"
+            endOffset="3201"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;📘&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="37"
+            column="17"
+            startOffset="1414"
+            endLine="37"
+            endColumn="34"
+            endOffset="1431"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Subject Guidance&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="49"
+            column="21"
+            startOffset="1860"
+            endLine="49"
+            endColumn="52"
+            endOffset="1891"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;See what your subjects and marks open up&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="57"
+            column="21"
+            startOffset="2203"
+            endLine="57"
+            endColumn="76"
+            endOffset="2258"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Open&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="65"
+            column="17"
+            startOffset="2524"
+            endLine="65"
+            endColumn="50"
+            endOffset="2557"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Search&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="84"
+            column="17"
+            startOffset="3254"
+            endLine="84"
+            endColumn="52"
+            endOffset="3289"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Search careers, qualifications, study fields...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="96"
+            column="17"
+            startOffset="3750"
+            endLine="96"
+            endColumn="79"
+            endOffset="3812"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Explore careers and study programmes&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_careers.xml"
+            line="109"
+            column="13"
+            startOffset="4286"
+            endLine="109"
+            endColumn="64"
+            endOffset="4337"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Institution logo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="62"
+            column="29"
+            startOffset="2615"
+            endLine="62"
+            endColumn="74"
+            endOffset="2660"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;STUDY AT&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="79"
+            column="29"
+            startOffset="3455"
+            endLine="79"
+            endColumn="52"
+            endOffset="3478"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;About this course&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="163"
+            column="21"
+            startOffset="7161"
+            endLine="163"
+            endColumn="53"
+            endOffset="7193"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading course information from SAQA…&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="179"
+            column="21"
+            startOffset="7861"
+            endLine="179"
+            endColumn="73"
+            endOffset="7913"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Where to study&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="201"
+            column="21"
+            startOffset="8776"
+            endLine="201"
+            endColumn="50"
+            endOffset="8805"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tap an institution to see its course.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="208"
+            column="21"
+            startOffset="9079"
+            endLine="208"
+            endColumn="73"
+            endOffset="9131"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;VISIT WEBSITE 🌐&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="236"
+            column="21"
+            startOffset="10308"
+            endLine="236"
+            endColumn="52"
+            endOffset="10339"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;VIEW ON SAQA&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_course_detail.xml"
+            line="248"
+            column="21"
+            startOffset="10828"
+            endLine="248"
+            endColumn="48"
+            endOffset="10855"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;SAVE DRAFT&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_cv_builder.xml"
+            line="45"
+            column="13"
+            startOffset="1544"
+            endLine="45"
+            endColumn="38"
+            endOffset="1569"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;CREATE PDF CV&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_cv_builder.xml"
+            line="54"
+            column="13"
+            startOffset="1849"
+            endLine="54"
+            endColumn="41"
+            endOffset="1877"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Add a document&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="35"
+            column="21"
+            startOffset="1250"
+            endLine="35"
+            endColumn="50"
+            endOffset="1279"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Upload a photo or PDF of your marks, CV, ID or certificates (up to 15 MB). Keep them here to attach to applications.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="42"
+            column="21"
+            startOffset="1539"
+            endLine="42"
+            endColumn="152"
+            endOffset="1670"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;UPLOAD FILE&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="61"
+            column="25"
+            startOffset="2504"
+            endLine="61"
+            endColumn="51"
+            endOffset="2530"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;TAKE PHOTO 📷&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="72"
+            column="25"
+            startOffset="3006"
+            endLine="72"
+            endColumn="53"
+            endOffset="3034"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;📝&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="94"
+            column="21"
+            startOffset="3922"
+            endLine="94"
+            endColumn="38"
+            endOffset="3939"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create my CV&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="107"
+            column="25"
+            startOffset="4450"
+            endLine="107"
+            endColumn="52"
+            endOffset="4477"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Answer a few questions and download a PDF CV&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="116"
+            column="25"
+            startOffset="4864"
+            endLine="116"
+            endColumn="84"
+            endOffset="4923"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tap a document to attach it to your application.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="136"
+            column="17"
+            startOffset="5719"
+            endLine="136"
+            endColumn="80"
+            endOffset="5782"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Documents are stored privately on this phone and included in your Google backup.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_documents.xml"
+            line="176"
+            column="17"
+            startOffset="7379"
+            endLine="176"
+            endColumn="112"
+            endOffset="7474"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Search&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="40"
+            column="21"
+            startOffset="1480"
+            endLine="40"
+            endColumn="56"
+            endOffset="1515"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Search opportunities, fields, providers...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="51"
+            column="21"
+            startOffset="1969"
+            endLine="51"
+            endColumn="78"
+            endOffset="2026"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;SEARCH&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="65"
+            column="21"
+            startOffset="2632"
+            endLine="65"
+            endColumn="42"
+            endOffset="2653"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;🏛️ Explore higher education&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="105"
+            column="25"
+            startOffset="4417"
+            endLine="105"
+            endColumn="68"
+            endOffset="4460"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;See all ›&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="113"
+            column="25"
+            startOffset="4835"
+            endLine="113"
+            endColumn="49"
+            endOffset="4859"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Universities, private colleges and TVET colleges across South Africa&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="123"
+            column="21"
+            startOffset="5281"
+            endLine="123"
+            endColumn="104"
+            endOffset="5364"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;SHOW MORE&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="182"
+            column="17"
+            startOffset="7790"
+            endLine="182"
+            endColumn="41"
+            endOffset="7814"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No opportunities match your search. Try another keyword such as technology, bursary, internship, finance, education or KwaZulu-Natal.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_explore.xml"
+            line="188"
+            column="17"
+            startOffset="7990"
+            endLine="188"
+            endColumn="165"
+            endOffset="8138"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;NexPathSA&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="30"
+            column="17"
+            startOffset="1208"
+            endLine="30"
+            endColumn="55"
+            endOffset="1246"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Welcome Back!&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="39"
+            column="17"
+            startOffset="1584"
+            endLine="39"
+            endColumn="45"
+            endOffset="1612"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="58"
+            column="17"
+            startOffset="2349"
+            endLine="58"
+            endColumn="37"
+            endOffset="2369"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Enter your email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="63"
+            column="17"
+            startOffset="2498"
+            endLine="63"
+            endColumn="48"
+            endOffset="2529"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="79"
+            column="17"
+            startOffset="3154"
+            endLine="79"
+            endColumn="40"
+            endOffset="3177"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Enter your password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="88"
+            column="21"
+            startOffset="3461"
+            endLine="88"
+            endColumn="55"
+            endOffset="3495"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Show password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="100"
+            column="21"
+            startOffset="4066"
+            endLine="100"
+            endColumn="63"
+            endOffset="4108"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;LOGIN&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="116"
+            column="17"
+            startOffset="4700"
+            endLine="116"
+            endColumn="37"
+            endOffset="4720"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Forgot Password?&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="125"
+            column="17"
+            startOffset="5078"
+            endLine="125"
+            endColumn="48"
+            endOffset="5109"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;OR&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="145"
+            column="21"
+            startOffset="5895"
+            endLine="145"
+            endColumn="38"
+            endOffset="5912"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Don&apos;t have an account? &quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="167"
+            column="21"
+            startOffset="6773"
+            endLine="167"
+            endColumn="59"
+            endOffset="6811"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Sign Up&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="176"
+            column="21"
+            startOffset="7176"
+            endLine="176"
+            endColumn="43"
+            endOffset="7198"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Profile&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="43"
+            column="25"
+            startOffset="1747"
+            endLine="43"
+            endColumn="61"
+            endOffset="1783"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;☰&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="45"
+            column="25"
+            startOffset="1859"
+            endLine="45"
+            endColumn="41"
+            endOffset="1875"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Let&apos;s plan your future.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="75"
+            column="29"
+            startOffset="3315"
+            endLine="75"
+            endColumn="67"
+            endOffset="3353"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Alerts&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="86"
+            column="25"
+            startOffset="3876"
+            endLine="86"
+            endColumn="60"
+            endOffset="3911"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Search&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="131"
+            column="21"
+            startOffset="5942"
+            endLine="131"
+            endColumn="56"
+            endOffset="5977"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Search all opportunities...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="142"
+            column="21"
+            startOffset="6431"
+            endLine="142"
+            endColumn="63"
+            endOffset="6473"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;SEARCH&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="156"
+            column="21"
+            startOffset="7079"
+            endLine="156"
+            endColumn="42"
+            endOffset="7100"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Recommended for you&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="182"
+            column="21"
+            startOffset="8047"
+            endLine="182"
+            endColumn="55"
+            endOffset="8081"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;View all&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="188"
+            column="21"
+            startOffset="8301"
+            endLine="188"
+            endColumn="44"
+            endOffset="8324"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;VIEW →&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="250"
+            column="25"
+            startOffset="11180"
+            endLine="250"
+            endColumn="46"
+            endOffset="11201"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Discover for you&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="269"
+            column="21"
+            startOffset="11990"
+            endLine="269"
+            endColumn="52"
+            endOffset="12021"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;🔀 Shuffle&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="279"
+            column="21"
+            startOffset="12456"
+            endLine="279"
+            endColumn="46"
+            endOffset="12481"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Explore Opportunities&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="306"
+            column="21"
+            startOffset="13513"
+            endLine="306"
+            endColumn="57"
+            endOffset="13549"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;More opportunities matched to you&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="397"
+            column="21"
+            startOffset="17137"
+            endLine="397"
+            endColumn="69"
+            endOffset="17185"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Back&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="28"
+            column="17"
+            startOffset="1029"
+            endLine="28"
+            endColumn="50"
+            endOffset="1062"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Profile setup • 1 of 1&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="37"
+            column="17"
+            startOffset="1393"
+            endLine="37"
+            endColumn="54"
+            endOffset="1430"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tell us about yourself&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="56"
+            column="13"
+            startOffset="2088"
+            endLine="56"
+            endColumn="50"
+            endOffset="2125"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;This helps NexPathSA find opportunities suitable for you.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="66"
+            column="13"
+            startOffset="2463"
+            endLine="66"
+            endColumn="85"
+            endOffset="2535"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Full Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="81"
+            column="17"
+            startOffset="3069"
+            endLine="81"
+            endColumn="41"
+            endOffset="3093"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Enter your full name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="87"
+            column="17"
+            startOffset="3221"
+            endLine="87"
+            endColumn="52"
+            endOffset="3256"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="98"
+            column="17"
+            startOffset="3755"
+            endLine="98"
+            endColumn="37"
+            endOffset="3775"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Your email is your login, so it can&apos;t be changed here.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="112"
+            column="17"
+            startOffset="4264"
+            endLine="112"
+            endColumn="86"
+            endOffset="4333"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Phone number&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="122"
+            column="17"
+            startOffset="4716"
+            endLine="122"
+            endColumn="44"
+            endOffset="4743"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;e.g. 071 234 5678&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="127"
+            column="17"
+            startOffset="4867"
+            endLine="127"
+            endColumn="49"
+            endOffset="4899"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Date of birth&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="138"
+            column="17"
+            startOffset="5318"
+            endLine="138"
+            endColumn="45"
+            endOffset="5346"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Select your date of birth&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="146"
+            column="17"
+            startOffset="5626"
+            endLine="146"
+            endColumn="57"
+            endOffset="5666"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Province&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="154"
+            column="17"
+            startOffset="5954"
+            endLine="154"
+            endColumn="40"
+            endOffset="5977"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;⌄&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="174"
+            column="21"
+            startOffset="6774"
+            endLine="174"
+            endColumn="37"
+            endOffset="6790"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;City or town&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="185"
+            column="17"
+            startOffset="7202"
+            endLine="185"
+            endColumn="44"
+            endOffset="7229"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;e.g. Soweto&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="190"
+            column="17"
+            startOffset="7352"
+            endLine="190"
+            endColumn="43"
+            endOffset="7378"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;School, college or university&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="201"
+            column="17"
+            startOffset="7822"
+            endLine="201"
+            endColumn="61"
+            endOffset="7866"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;e.g. Soweto High School or University of Pretoria&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="206"
+            column="17"
+            startOffset="7996"
+            endLine="206"
+            endColumn="81"
+            endOffset="8060"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;About me&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="217"
+            column="17"
+            startOffset="8487"
+            endLine="217"
+            endColumn="40"
+            endOffset="8510"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;A few lines about your goals, e.g. for bursary applications&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="223"
+            column="17"
+            startOffset="8676"
+            endLine="223"
+            endColumn="91"
+            endOffset="8750"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;I am a...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="246"
+            column="17"
+            startOffset="9615"
+            endLine="246"
+            endColumn="41"
+            endOffset="9639"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Select the option that best describes you to continue.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="304"
+            column="13"
+            startOffset="12000"
+            endLine="304"
+            endColumn="82"
+            endOffset="12069"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Education level&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="321"
+            column="17"
+            startOffset="12678"
+            endLine="321"
+            endColumn="47"
+            endOffset="12708"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;⌄&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="341"
+            column="21"
+            startOffset="13511"
+            endLine="341"
+            endColumn="37"
+            endOffset="13527"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Your latest marks (optional)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="374"
+            column="21"
+            startOffset="14909"
+            endLine="374"
+            endColumn="64"
+            endOffset="14952"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Enter your most recent term or final mark (0–100%). NexPathSA uses them to check minimum entry marks for careers and study programmes.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="382"
+            column="21"
+            startOffset="15267"
+            endLine="382"
+            endColumn="170"
+            endOffset="15416"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tell us what else you are interested in...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="410"
+            column="17"
+            startOffset="16512"
+            endLine="410"
+            endColumn="74"
+            endOffset="16569"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;CONTINUE →&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_onboarding.xml"
+            line="421"
+            column="17"
+            startOffset="16989"
+            endLine="421"
+            endColumn="42"
+            endOffset="17014"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;TYPE&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="67"
+            column="29"
+            startOffset="2686"
+            endLine="67"
+            endColumn="48"
+            endOffset="2705"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;FIELD&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="95"
+            column="29"
+            startOffset="4050"
+            endLine="95"
+            endColumn="49"
+            endOffset="4070"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;LOCATION&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="131"
+            column="29"
+            startOffset="5706"
+            endLine="131"
+            endColumn="52"
+            endOffset="5729"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;DEADLINE&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="159"
+            column="29"
+            startOffset="7078"
+            endLine="159"
+            endColumn="52"
+            endOffset="7101"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;About this opportunity&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="181"
+            column="21"
+            startOffset="8068"
+            endLine="181"
+            endColumn="58"
+            endOffset="8105"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;What you may need&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="197"
+            column="21"
+            startOffset="8782"
+            endLine="197"
+            endColumn="53"
+            endOffset="8814"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;APPLY ON WEBSITE 🌐&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="236"
+            column="29"
+            startOffset="10671"
+            endLine="236"
+            endColumn="63"
+            endOffset="10705"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;APPLY NOW&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="246"
+            column="29"
+            startOffset="11174"
+            endLine="246"
+            endColumn="53"
+            endOffset="11198"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;NOT FOR ME ✕&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_opportunity_detail.xml"
+            line="263"
+            column="25"
+            startOffset="11977"
+            endLine="263"
+            endColumn="52"
+            endOffset="12004"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_profile.xml"
+            line="41"
+            column="25"
+            startOffset="1631"
+            endLine="41"
+            endColumn="58"
+            endOffset="1664"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;☰&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_profile.xml"
+            line="43"
+            column="25"
+            startOffset="1740"
+            endLine="43"
+            endColumn="41"
+            endOffset="1756"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Settings&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_profile.xml"
+            line="53"
+            column="25"
+            startOffset="2231"
+            endLine="53"
+            endColumn="62"
+            endOffset="2268"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Back&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="29"
+            column="17"
+            startOffset="1139"
+            endLine="29"
+            endColumn="50"
+            endOffset="1172"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create Account&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="38"
+            column="17"
+            startOffset="1501"
+            endLine="38"
+            endColumn="46"
+            endOffset="1530"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create your NexPathSA account and start planning your future.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="49"
+            column="17"
+            startOffset="1956"
+            endLine="49"
+            endColumn="93"
+            endOffset="2032"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Full Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="57"
+            column="17"
+            startOffset="2328"
+            endLine="57"
+            endColumn="41"
+            endOffset="2352"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Enter your full name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="62"
+            column="17"
+            startOffset="2484"
+            endLine="62"
+            endColumn="52"
+            endOffset="2519"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="78"
+            column="17"
+            startOffset="3154"
+            endLine="78"
+            endColumn="37"
+            endOffset="3174"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Enter your email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="83"
+            column="17"
+            startOffset="3303"
+            endLine="83"
+            endColumn="48"
+            endOffset="3334"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="99"
+            column="17"
+            startOffset="3959"
+            endLine="99"
+            endColumn="40"
+            endOffset="3982"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create a strong password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="108"
+            column="21"
+            startOffset="4266"
+            endLine="108"
+            endColumn="60"
+            endOffset="4305"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Show password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="120"
+            column="21"
+            startOffset="4876"
+            endLine="120"
+            endColumn="63"
+            endOffset="4918"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create a strong password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="136"
+            column="21"
+            startOffset="5548"
+            endLine="136"
+            endColumn="60"
+            endOffset="5587"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Confirm Password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="223"
+            column="17"
+            startOffset="9421"
+            endLine="223"
+            endColumn="48"
+            endOffset="9452"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Confirm your password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="232"
+            column="21"
+            startOffset="9743"
+            endLine="232"
+            endColumn="57"
+            endOffset="9779"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Show password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="244"
+            column="21"
+            startOffset="10357"
+            endLine="244"
+            endColumn="63"
+            endOffset="10399"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;CREATE ACCOUNT&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="260"
+            column="17"
+            startOffset="10998"
+            endLine="260"
+            endColumn="46"
+            endOffset="11027"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Already have an account? &quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="273"
+            column="21"
+            startOffset="11543"
+            endLine="273"
+            endColumn="61"
+            endOffset="11583"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Login&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_register.xml"
+            line="282"
+            column="21"
+            startOffset="11945"
+            endLine="282"
+            endColumn="41"
+            endOffset="11965"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;NexPathSA logo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
+            line="22"
+            column="9"
+            startOffset="794"
+            endLine="22"
+            endColumn="52"
+            endOffset="837"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
+            line="61"
+            column="9"
+            startOffset="2065"
+            endLine="61"
+            endColumn="34"
+            endOffset="2090"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;✉️&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="21"
+            column="13"
+            startOffset="712"
+            endLine="21"
+            endColumn="30"
+            endOffset="729"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Verify your email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="30"
+            column="13"
+            startOffset="1013"
+            endLine="30"
+            endColumn="45"
+            endOffset="1045"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Can&apos;t find it? Check your spam or promotions folder. The link opens in your browser; come back here afterwards.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="46"
+            column="13"
+            startOffset="1573"
+            endLine="46"
+            endColumn="139"
+            endOffset="1699"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;I&apos;VE VERIFIED MY EMAIL&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="61"
+            column="13"
+            startOffset="2188"
+            endLine="61"
+            endColumn="50"
+            endOffset="2225"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;OPEN EMAIL APP&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="68"
+            column="13"
+            startOffset="2432"
+            endLine="68"
+            endColumn="42"
+            endOffset="2461"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Resend verification email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="77"
+            column="13"
+            startOffset="2749"
+            endLine="77"
+            endColumn="53"
+            endOffset="2789"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Use a different account&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_verify_email.xml"
+            line="86"
+            column="13"
+            startOffset="3078"
+            endLine="86"
+            endColumn="51"
+            endOffset="3116"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create a new strong password. Your new password must meet all five requirements.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_change_password.xml"
+            line="18"
+            column="13"
+            startOffset="625"
+            endLine="18"
+            endColumn="108"
+            endOffset="720"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Current password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_change_password.xml"
+            line="26"
+            column="17"
+            startOffset="1016"
+            endLine="26"
+            endColumn="48"
+            endOffset="1047"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Current password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_change_password.xml"
+            line="31"
+            column="17"
+            startOffset="1182"
+            endLine="31"
+            endColumn="48"
+            endOffset="1213"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;New password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_change_password.xml"
+            line="41"
+            column="17"
+            startOffset="1610"
+            endLine="41"
+            endColumn="44"
+            endOffset="1637"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;New strong password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_change_password.xml"
+            line="46"
+            column="17"
+            startOffset="1772"
+            endLine="46"
+            endColumn="51"
+            endOffset="1806"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Confirm new password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_change_password.xml"
+            line="111"
+            column="17"
+            startOffset="4693"
+            endLine="111"
+            endColumn="52"
+            endOffset="4728"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Confirm new password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_change_password.xml"
+            line="116"
+            column="17"
+            startOffset="4870"
+            endLine="116"
+            endColumn="52"
+            endOffset="4905"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tell the support team what you need help with.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_contact_support.xml"
+            line="18"
+            column="13"
+            startOffset="625"
+            endLine="18"
+            endColumn="74"
+            endOffset="686"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Subject&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_contact_support.xml"
+            line="26"
+            column="17"
+            startOffset="982"
+            endLine="26"
+            endColumn="39"
+            endOffset="1004"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;e.g. I cannot save an opportunity&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_contact_support.xml"
+            line="31"
+            column="17"
+            startOffset="1142"
+            endLine="31"
+            endColumn="65"
+            endOffset="1190"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Message&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_contact_support.xml"
+            line="41"
+            column="17"
+            startOffset="1591"
+            endLine="41"
+            endColumn="39"
+            endOffset="1613"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Describe what happened...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_contact_support.xml"
+            line="46"
+            column="17"
+            startOffset="1751"
+            endLine="46"
+            endColumn="57"
+            endOffset="1791"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_document_details.xml"
+            line="16"
+            column="9"
+            startOffset="590"
+            endLine="16"
+            endColumn="28"
+            endOffset="609"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;e.g. Grade 12 June results&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_document_details.xml"
+            line="21"
+            column="9"
+            startOffset="704"
+            endLine="21"
+            endColumn="50"
+            endOffset="745"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Type of document&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_document_details.xml"
+            line="32"
+            column="9"
+            startOffset="1095"
+            endLine="32"
+            endColumn="40"
+            endOffset="1126"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;⌄&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_document_details.xml"
+            line="52"
+            column="13"
+            startOffset="1790"
+            endLine="52"
+            endColumn="29"
+            endOffset="1806"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Help us reproduce the problem. Include the screen and what you expected to happen.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_report_problem.xml"
+            line="18"
+            column="13"
+            startOffset="625"
+            endLine="18"
+            endColumn="110"
+            endOffset="722"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Problem&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_report_problem.xml"
+            line="26"
+            column="17"
+            startOffset="1018"
+            endLine="26"
+            endColumn="39"
+            endOffset="1040"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Describe the problem...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_report_problem.xml"
+            line="31"
+            column="17"
+            startOffset="1171"
+            endLine="31"
+            endColumn="55"
+            endOffset="1209"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Screen&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_report_problem.xml"
+            line="43"
+            column="17"
+            startOffset="1701"
+            endLine="43"
+            endColumn="38"
+            endOffset="1722"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading photo…&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_campus_photo.xml"
+            line="23"
+            column="13"
+            startOffset="858"
+            endLine="23"
+            endColumn="42"
+            endOffset="887"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Career&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_career_result.xml"
+            line="28"
+            column="13"
+            startOffset="1048"
+            endLine="28"
+            endColumn="34"
+            endOffset="1069"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;•&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_checklist_row.xml"
+            line="14"
+            column="9"
+            startOffset="503"
+            endLine="14"
+            endColumn="25"
+            endOffset="519"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Institution logo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_course_offering.xml"
+            line="35"
+            column="13"
+            startOffset="1304"
+            endLine="35"
+            endColumn="58"
+            endOffset="1349"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Preview&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_document.xml"
+            line="32"
+            column="13"
+            startOffset="1102"
+            endLine="32"
+            endColumn="49"
+            endOffset="1138"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;More actions&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_document.xml"
+            line="82"
+            column="9"
+            startOffset="2831"
+            endLine="82"
+            endColumn="50"
+            endOffset="2872"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;⋮&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_document.xml"
+            line="84"
+            column="9"
+            startOffset="2914"
+            endLine="84"
+            endColumn="25"
+            endOffset="2930"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;⌄&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_faq.xml"
+            line="33"
+            column="13"
+            startOffset="1209"
+            endLine="33"
+            endColumn="29"
+            endOffset="1225"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Institution logo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_institution_card.xml"
+            line="33"
+            column="13"
+            startOffset="1187"
+            endLine="33"
+            endColumn="58"
+            endOffset="1232"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Institution logo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_institution_row.xml"
+            line="33"
+            column="13"
+            startOffset="1228"
+            endLine="33"
+            endColumn="58"
+            endOffset="1273"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;VIEW&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_opportunity.xml"
+            line="88"
+            column="13"
+            startOffset="2961"
+            endLine="88"
+            endColumn="32"
+            endOffset="2980"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;✓ Applied&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_opportunity.xml"
+            line="100"
+            column="13"
+            startOffset="3357"
+            endLine="100"
+            endColumn="37"
+            endOffset="3381"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;›&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_profile_menu_row.xml"
+            line="71"
+            column="9"
+            startOffset="2508"
+            endLine="71"
+            endColumn="25"
+            endOffset="2524"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Search by name, city or province&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_search_field.xml"
+            line="8"
+            column="5"
+            startOffset="341"
+            endLine="8"
+            endColumn="52"
+            endOffset="388"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;—&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_subject_mark.xml"
+            line="23"
+            column="9"
+            startOffset="778"
+            endLine="23"
+            endColumn="25"
+            endOffset="794"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;%&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_subject_mark.xml"
+            line="34"
+            column="9"
+            startOffset="1127"
+            endLine="34"
+            endColumn="25"
+            endOffset="1143"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="29"
+            column="13"
+            startOffset="1074"
+            endLine="29"
+            endColumn="46"
+            endOffset="1107"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="37"
+            column="13"
+            startOffset="1376"
+            endLine="37"
+            endColumn="32"
+            endOffset="1395"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Explore&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="58"
+            column="13"
+            startOffset="2091"
+            endLine="58"
+            endColumn="49"
+            endOffset="2127"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Explore&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="66"
+            column="13"
+            startOffset="2401"
+            endLine="66"
+            endColumn="35"
+            endOffset="2423"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Careers&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="88"
+            column="13"
+            startOffset="3154"
+            endLine="88"
+            endColumn="49"
+            endOffset="3190"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Careers&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="96"
+            column="13"
+            startOffset="3462"
+            endLine="96"
+            endColumn="35"
+            endOffset="3484"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Alerts&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="117"
+            column="13"
+            startOffset="4178"
+            endLine="117"
+            endColumn="48"
+            endOffset="4213"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Alerts&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="125"
+            column="13"
+            startOffset="4493"
+            endLine="125"
+            endColumn="34"
+            endOffset="4514"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Profile&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="146"
+            column="13"
+            startOffset="5210"
+            endLine="146"
+            endColumn="49"
+            endOffset="5246"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Profile&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_bottom_nav.xml"
+            line="154"
+            column="13"
+            startOffset="5520"
+            endLine="154"
+            endColumn="35"
+            endOffset="5542"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Back&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/layout_page_title.xml"
+            line="19"
+            column="9"
+            startOffset="783"
+            endLine="19"
+            endColumn="42"
+            endOffset="816"/>
+    </incident>
+
+</incidents>

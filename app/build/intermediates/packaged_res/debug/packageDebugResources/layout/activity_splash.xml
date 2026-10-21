@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Matches the NexPathSA splash design: logo emblem, "NexPathSA" wordmark,
+     "Your Path. Your Future." and a loading spinner on a navy glow. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="198dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="NexPathSA logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_splash_emblem" />
+
+    <TextView
+        android:id="@+id/textBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:letterSpacing="-0.02"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" />
+
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="12dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/teal_bright" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:letterSpacing="0.08"
+        android:text="Loading..."
+        android:textColor="@color/splash_loading_text"
+        android:textSize="14sp" />
+
+</LinearLayout>

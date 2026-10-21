@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android Auto Backup (Android 6-11). Saves the accounts, profiles, saved items and
+     applications (nexpathsa.db) and the sign-in session and settings (shared preferences)
+     to the user's Google account, and restores them when the app is installed on a new
+     phone signed in to the same Google account. Caches (such as university logos) are
+     never backed up. -->
+<full-backup-content>
+    <include domain="database" path="." />
+    <include domain="sharedpref" path="." />
+    <!-- My Documents (photos and PDFs of marks, CVs, certificates). -->
+    <include domain="file" path="documents/" />
+</full-backup-content>

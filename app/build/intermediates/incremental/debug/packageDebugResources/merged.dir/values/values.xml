@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alert_icon_bg">@color/teal_icon_bg</color>
+    <color name="avatar">#12BDB2</color>
+    <color name="background">#F5F8FB</color>
+    <color name="card_line">#E0E7EF</color>
+    <color name="chip_background">#EEF2F6</color>
+    <color name="chip_text_idle">#4E5E73</color>
+    <color name="danger">#DC3545</color>
+    <color name="danger_bg">#FFF0F1</color>
+    <color name="danger_field_bg">#FFF8F8</color>
+    <color name="danger_row">#D13A45</color>
+    <color name="detail_bg">#F6F8FA</color>
+    <color name="divider">@color/line</color>
+    <color name="header_sub">#D5DFED</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="ink">#10213D</color>
+    <color name="line">#DCE4ED</color>
+    <color name="mark_btn_bg">#EEF4F7</color>
+    <color name="muted">#68778B</color>
+    <color name="muted_light">#7A8798</color>
+    <color name="nav_inactive">#CBD6E6</color>
+    <color name="navy">#061B3A</color>
+    <color name="navy_2">#0A2A55</color>
+    <color name="navy_brand_end">#092B57</color>
+    <color name="navy_brand_start">#041735</color>
+    <color name="navy_dark">@color/navy</color>
+    <color name="note_bg">#F7F9FB</color>
+    <color name="pill_bg">#E9F8F1</color>
+    <color name="pill_dot">#17A766</color>
+    <color name="row_line">#EDF1F5</color>
+    <color name="splash_edge">#041431</color>
+    <color name="splash_glow">#061A3E</color>
+    <color name="splash_loading_text">#A0AEC0</color>
+    <color name="success">#14804A</color>
+    <color name="success_bar">#14A96C</color>
+    <color name="teal">#0BB5AA</color>
+    <color name="teal_bright">#12C9BD</color>
+    <color name="teal_chip_bg">#E5FAF8</color>
+    <color name="teal_chip_text">#007F78</color>
+    <color name="teal_dark">#08A89E</color>
+    <color name="teal_hero_icon">#D8F4F1</color>
+    <color name="teal_icon_bg">#E4F8F6</color>
+    <color name="teal_nav">#13C8BC</color>
+    <color name="teal_setting_bg">#EDF9F7</color>
+    <color name="teal_tag_text">#008D85</color>
+    <color name="teal_text">#009E94</color>
+    <color name="teal_tint">#EAF9F7</color>
+    <color name="text_primary">@color/ink</color>
+    <color name="text_secondary">@color/muted</color>
+    <color name="warning_bar">#E0A11B</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">NexPathSA</string>
+    <string name="default_web_client_id" translatable="false">231531047685-7tl4b26ocb420247c2s273748qdmqvbm.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://nexpathsa-6eedd-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">231531047685</string>
+    <string name="google_api_key" translatable="false">AIzaSyBpjVDtO3d1RC6p5zHkhTU6wLQt9GgPuYw</string>
+    <string name="google_app_id" translatable="false">1:231531047685:android:846511146c5d30700be56c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBpjVDtO3d1RC6p5zHkhTU6wLQt9GgPuYw</string>
+    <string name="google_storage_bucket" translatable="false">nexpathsa-6eedd.firebasestorage.app</string>
+    <string name="project_id" translatable="false">nexpathsa-6eedd</string>
+    <string name="tagline">Your Path. Your Future.</string>
+    <style name="Btn" parent="Widget.AppCompat.Button.Borderless">
+        
+        <item name="backgroundTint">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+    </style>
+    <style name="Btn.Outline">
+        <item name="android:background">@drawable/bg_btn_outline</item>
+        <item name="android:textColor">#008F87</item>
+    </style>
+    <style name="Btn.Primary">
+        <item name="android:background">@drawable/bg_btn_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Btn.Small" parent="Widget.AppCompat.Button.Borderless">
+        
+        <item name="backgroundTint">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="Btn.Small.Primary">
+        <item name="android:background">@drawable/bg_btn_small_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Btn.Small.Save">
+        <item name="android:background">@drawable/bg_btn_small_save</item>
+        <item name="android:textColor">#45556B</item>
+    </style>
+    <style name="Card" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="Chip.NexPath" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_bg</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipMinHeight">36dp</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+    </style>
+    <style name="Chip.NexPath.Filter">
+        <item name="android:textColor">@color/filter_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="DialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/teal_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DialogButton.Muted">
+        <item name="android:textColor">@color/muted</item>
+    </style>
+    <style name="Input" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textColorHint">#8C99AA</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="Note" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_note</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">#748297</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+    </style>
+    <style name="ShapeOverlay.NexPathSA.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+    <style name="Text.Body" parent="">
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    <style name="Text.H1" parent="">
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.Label" parent="">
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.Link" parent="">
+        <item name="android:textColor">@color/teal_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="Text.Msg" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="Text.PageTitle" parent="">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.Section" parent="">
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.SettingsTitle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/muted_light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">2dp</item>
+    </style>
+    <style name="Text.Small" parent="">
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Theme.NexPathSA" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/teal</item>
+        <item name="colorPrimaryVariant">@color/teal_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorAccent">@color/teal</item>
+        <item name="android:textColorPrimary">@color/ink</item>
+        <item name="android:textColorSecondary">@color/muted</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:navigationBarColor">@color/navy</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.NexPathSA.Dialog</item>
+    </style>
+    <style name="Theme.NexPathSA.Splash">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:statusBarColor">@color/splash_edge</item>
+        <item name="android:navigationBarColor">@color/splash_edge</item>
+    </style>
+    <style name="Theme.NexPathSA.White">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="ThemeOverlay.NexPathSA.Dialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/teal</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeOverlay.NexPathSA.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButton.Muted</item>
+    </style>
+</resources>

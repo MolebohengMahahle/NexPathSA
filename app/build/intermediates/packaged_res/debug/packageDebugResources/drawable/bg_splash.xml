@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Navy glow from the NexPathSA splash design; the centre colour matches the
+     background baked into logo_splash_emblem.png so its edges blend in. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="radial"
+        android:centerY="0.42"
+        android:gradientRadius="560dp"
+        android:startColor="@color/splash_glow"
+        android:endColor="@color/splash_edge" />
+</shape>

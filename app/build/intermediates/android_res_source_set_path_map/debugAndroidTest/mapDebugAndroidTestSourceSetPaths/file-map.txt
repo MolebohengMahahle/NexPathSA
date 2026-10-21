@@ -1,0 +1,5 @@
+com.nexpathsa.app.test.app-updated_navigation_xml-0 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\generated\updated_navigation_xml\debugAndroidTest
+com.nexpathsa.app.test.app-packageDebugAndroidTestResources-1 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\intermediates\incremental\debugAndroidTest\packageDebugAndroidTestResources\merged.dir
+com.nexpathsa.app.test.app-packageDebugAndroidTestResources-2 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\intermediates\incremental\debugAndroidTest\packageDebugAndroidTestResources\stripped.dir
+com.nexpathsa.app.test.app-debugAndroidTest-3 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+gradleHome-0 C:\Users\s224761382\.gradle

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="40dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="-10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/ink" />
+
+            <TextView
+                android:id="@+id/textStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Profile setup • 1 of 1"
+                android:textColor="@color/muted"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/bg_btn_small_primary" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/Text.H1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tell us about yourself" />
+
+        <TextView
+            android:id="@+id/textSubtitle"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="This helps NexPathSA find opportunities suitable for you." />
+
+        <LinearLayout
+            android:id="@+id/groupFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="Full Name" />
+
+
+            <EditText
+                android:id="@+id/editFullName"
+                style="@style/Input"
+                android:hint="Enter your full name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapWords" />
+
+            <!-- Personal details (Edit Profile only). Everything but the email is optional. -->
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/editProfileEmail"
+                style="@style/Input"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:textColor="@color/muted" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your email is your login, so it can't be changed here."
+                android:textColor="@color/muted_light"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="Phone number" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                style="@style/Input"
+                android:hint="e.g. 071 234 5678"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:maxLength="16" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="Date of birth" />
+
+            <TextView
+                android:id="@+id/textDateOfBirth"
+                style="@style/Input"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:hint="Select your date of birth" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="Province" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input">
+
+                <Spinner
+                    android:id="@+id/spinnerProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="14dp"
+                    android:text="⌄"
+                    android:textColor="@color/muted"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="City or town" />
+
+            <EditText
+                android:id="@+id/editCity"
+                style="@style/Input"
+                android:hint="e.g. Soweto"
+                android:importantForAutofill="no"
+                android:inputType="textPostalAddress|textCapWords"
+                android:maxLength="60" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="School, college or university" />
+
+            <EditText
+                android:id="@+id/editInstitution"
+                style="@style/Input"
+                android:hint="e.g. Soweto High School or University of Pretoria"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:maxLength="100" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="7dp"
+                android:text="About me" />
+
+            <EditText
+                android:id="@+id/editBio"
+                style="@style/Input"
+                android:gravity="top|start"
+                android:hint="A few lines about your goals, e.g. for bursary applications"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="300"
+                android:minLines="3" />
+
+            <TextView
+                android:id="@+id/textBioCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="end"
+                android:textColor="@color/muted_light"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:text="I am a..." />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/role0"
+                        layout="@layout/item_role"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/role1"
+                        layout="@layout/item_role"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/role2"
+                        layout="@layout/item_role"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/role3"
+                        layout="@layout/item_role"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSelectRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:text="Select the option that best describes you to continue."
+            android:textColor="#718095"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/groupDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:text="Education level" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input">
+
+                <Spinner
+                    android:id="@+id/spinnerEducationLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="14dp"
+                    android:text="⌄"
+                    android:textColor="@color/muted"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textSubjectsHeading"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupSubjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipSpacingHorizontal="7dp"
+                app:chipSpacingVertical="0dp" />
+
+            <!-- School learners / matric job seekers: latest mark per selected subject. -->
+            <LinearLayout
+                android:id="@+id/groupMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Text.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Your latest marks (optional)" />
+
+                <TextView
+                    style="@style/Text.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Enter your most recent term or final mark (0–100%). NexPathSA uses them to check minimum entry marks for careers and study programmes." />
+
+                <LinearLayout
+                    android:id="@+id/containerMarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textInterestsHeading"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupInterests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipSpacingHorizontal="7dp"
+                app:chipSpacingVertical="0dp" />
+
+            <EditText
+                android:id="@+id/editOtherInterest"
+                style="@style/Input"
+                android:layout_marginTop="8dp"
+                android:hint="Tell us what else you are interested in..."
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnContinue"
+                style="@style/Btn.Primary"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="26dp"
+                android:text="CONTINUE →" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

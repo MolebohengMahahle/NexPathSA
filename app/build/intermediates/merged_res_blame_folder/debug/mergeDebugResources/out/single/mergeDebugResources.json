@@ -1,0 +1,778 @@
+[
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_logout.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/color_filter_text.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/color/filter_text.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_apply.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_apply.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_button_teal.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_button_teal.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_splash_emblem.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_splash_emblem.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_main.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_edit.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_boston.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_boston.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_visibility_off.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_visibility_off.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_shield.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_shield.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_note.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_note.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_home.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_ufs.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_ufs.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_school.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_school.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_nexpathsa.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_nexpathsa.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_career_guidance.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_career_guidance.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_mancosa.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_mancosa.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_avatar_circle.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_avatar_circle.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_tsc.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_tsc.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_role_card_selector.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/role_card_selector.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_row.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_row.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_unizulu.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_unizulu.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_header_navy.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_header_navy.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_dialog_change_password.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/dialog_change_password.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_ump.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_ump.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_work.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_work.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_location.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_location.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_faq.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_faq.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_nmu.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_nmu.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_visibility.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_visibility.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_career_result.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_career_result.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_step_circle_inactive.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_step_circle_inactive.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_opportunity.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_opportunity.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_motheo.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_motheo.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_badge_danger.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_badge_danger.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_ukzn.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_ukzn.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_opportunity_detail.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_opportunity_detail.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_input.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_smu.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_smu.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_close.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_filter_chip.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_filter_chip.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_uj.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_uj.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_num.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_num.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_settings.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_checklist_row.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_checklist_row.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_icon_tile.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_icon_tile.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_circle_teal_light.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_circle_teal_light.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_edittext.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_edittext.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_bcc.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_bcc.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_input_invalid.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_input_invalid.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_chip_text_color_selector.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/chip_text_color_selector.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/color_chip_text.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/color/chip_text.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_su.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_su.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_role.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_role.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_search.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_search.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_step_line.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_step_line.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_role.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_role.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_up.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_up.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_person.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/xml_backup_rules.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_alerts.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_alerts.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_profile.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_bookmark_filled.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_bookmark_filled.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_rules.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_rules.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_offering_selected.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_offering_selected.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_cut.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_cut.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_layout_page_title.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/layout_page_title.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_card.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_setting_icon_danger.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_setting_icon_danger.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_wsu.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_wsu.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_delete.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_majuba.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_majuba.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_search_outlined.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_search_outlined.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_campus_photo.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_campus_photo.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_book.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_book.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_document.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_document.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_edit_profile.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_brand.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_brand.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_close.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_close.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_logo_tile.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_logo_tile.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_btn_small_primary.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_btn_small_primary.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_false_bay.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_false_bay.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_ewc.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_ewc.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_cput.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_cput.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_dialog_document_details.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/dialog_document_details.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_dialog_report_problem.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/dialog_report_problem.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_cat.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_cat.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_univen.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_univen.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_search.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_institution_row.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_institution_row.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_setting_toggle.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_setting_toggle.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_chip.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_chip.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_subject_mark.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_subject_mark.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_login.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_btn_small_save.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_btn_small_save.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_journey_step_last.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_journey_step_last.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_button_outline.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_button_outline.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_calendar.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_calendar.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_mut.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_mut.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_uct.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_uct.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_ru.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_ru.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_help.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_help.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_btn_primary.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_btn_primary.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_splash.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_unisa.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_unisa.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_pill.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_pill.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_tag.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_tag.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_profile_menu_row.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_profile_menu_row.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_ul.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_ul.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_input_valid.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_input_valid.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/xml_data_extraction_rules.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_setting_icon.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_setting_icon.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_track.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_track.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_badge.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_badge.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_alert_read.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_alert_read.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_cjc.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_cjc.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_varsity_college.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_varsity_college.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_hero.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_hero.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_notifications.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_notifications.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_circle_icon.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_circle_icon.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_tut.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_tut.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_vut.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_vut.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_layout_bottom_nav.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/layout_bottom_nav.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_detail.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_detail.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_uwc.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_uwc.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_course_offering.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_course_offering.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_avatar.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_avatar.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_splash.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_splash.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_settings_page.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_settings_page.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.nexpathsa.app-main-47:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_step_circle_active.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_step_circle_active.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_bookmark_border.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_bookmark_border.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_rosebank_college.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_rosebank_college.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_dot.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_dot.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_hero_icon.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_hero_icon.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_northlink.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_northlink.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_profile_line.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_profile_line.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_institution_card.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_institution_card.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_spu.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_spu.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_ufh.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_ufh.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_stadio.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_stadio.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_chip_background_selector.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/chip_background_selector.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/color_chip_bg.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/color/chip_bg.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_richfield.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_richfield.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_groups.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_groups.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_afda.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_afda.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_offering.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_offering.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_wits.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_wits.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_onboarding.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_journey_step.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_journey_step.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_search_field.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_search_field.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_dut.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_dut.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_btn_outline.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_btn_outline.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_milpark.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_milpark.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/xml_file_paths.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_alert.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_alert.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_verify_email.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_verify_email.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_dialog_contact_support.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/dialog_contact_support.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_explore.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_explore.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_iie_msa.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_iie_msa.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_course_detail.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_course_detail.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_add.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_elangeni.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_elangeni.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_careers.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_careers.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_timeline_line.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_timeline_line.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_cv_builder.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_cv_builder.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_documents.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_documents.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_item_category_tile.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/item_category_tile.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_ic_check.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_alert_unread.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_alert_unread.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_search_bar.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_search_bar.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_nwu.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_nwu.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable_bg_mark_btn.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable/bg_mark_btn.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/drawable-nodpi_logo_cct.png.flat",
+        "source": "com.nexpathsa.app-main-47:/drawable-nodpi/logo_cct.png"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/color_chip_stroke.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/color/chip_stroke.xml"
+    },
+    {
+        "merged": "com.nexpathsa.app-debug-45:/layout_activity_register.xml.flat",
+        "source": "com.nexpathsa.app-main-47:/layout/activity_register.xml"
+    }
+]

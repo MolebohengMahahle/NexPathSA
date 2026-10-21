@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Folders other apps may open through the FileProvider (util/DocumentStore):
+     My Documents, camera photos waiting to be saved, and generated CVs. -->
+<paths>
+    <files-path name="documents" path="documents/" />
+    <cache-path name="camera" path="camera/" />
+    <cache-path name="cv" path="cv/" />
+</paths>

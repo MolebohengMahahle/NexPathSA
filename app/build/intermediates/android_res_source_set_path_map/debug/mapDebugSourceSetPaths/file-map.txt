@@ -1,0 +1,9 @@
+com.nexpathsa.app-pngs-0 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\generated\res\pngs\debug
+com.nexpathsa.app-res-1 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\generated\res\processDebugGoogleServices
+com.nexpathsa.app-updated_navigation_xml-2 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\generated\updated_navigation_xml\debug
+com.nexpathsa.app-packageDebugResources-3 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.nexpathsa.app-packageDebugResources-4 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.nexpathsa.app-debug-5 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.nexpathsa.app-debug-6 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\src\debug\res
+com.nexpathsa.app-main-7 C:\Users\s224761382\Downloads\UpdatedApp(2)\NexPathSA\app\src\main\res
+gradleHome-0 C:\Users\s224761382\.gradle

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55643889-db3e-4f4b-b377-9c744e366998" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ApplyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ApplyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/CareerGuidanceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/CareerGuidanceActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ExploreActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ExploreActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/NotificationSettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/NotificationSettingsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/OnboardingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/OnboardingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/OpportunityDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/OpportunityDetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/PrivacySecurityActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/PrivacySecurityActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/RegisterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/SettingsPageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/SettingsPageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/api/ZaBursariesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/api/ZaBursariesApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/db/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/db/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ml/PreferenceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/ml/PreferenceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/AlertsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/AlertsProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/BottomNavHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/BottomNavHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/Nav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/Nav.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/OpportunityCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/OpportunityCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/ProfileOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/ProfileOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/Recommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/Recommender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexpathsa/app/util/Ui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_explore.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_explore.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_onboarding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_onboarding.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_opportunity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_opportunity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/layout_bottom_nav.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/layout_bottom_nav.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3Kj0j27UbFw8laz2GnpoKyVW7iI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/s225133253/Desktop/NexPathSA/app/build.gradle"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55643889-db3e-4f4b-b377-9c744e366998" name="Changes" comment="" />
+      <created>1792055802533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792055802533</updated>
+    </task>
+    <servers />
+  </component>
+</project>

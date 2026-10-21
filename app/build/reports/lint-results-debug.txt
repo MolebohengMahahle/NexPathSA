@@ -1,0 +1,1276 @@
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\DocumentReview.java:53: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                    .setMessage("We couldn't read the details from this " + result.kind.label.toLowerCase()
+                                                                                              ~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\DocumentReview.java:97: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                .setTitle("Found in your " + kind.label.toLowerCase())
+                                                        ~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\DocumentsActivity.java:279: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        Ui.toast(this, "Reading your " + kind.label.toLowerCase() + "…");
+                                                    ~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.ROOT) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:70: Warning: Duplicate id @+id/stepDescription, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepDescription, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepDescription] [DuplicateIncludedIds]
+                <include
+                ^
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step.xml:51: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepDescription
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step_last.xml:51: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepDescription
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:70: Warning: Duplicate id @+id/stepLine, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepLine, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepLine] [DuplicateIncludedIds]
+                <include
+                ^
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step.xml:25: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepLine
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step_last.xml:25: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepLine
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:70: Warning: Duplicate id @+id/stepNumber, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepNumber, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepNumber] [DuplicateIncludedIds]
+                <include
+                ^
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step.xml:15: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepNumber
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step_last.xml:15: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepNumber
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:70: Warning: Duplicate id @+id/stepTitle, defined or included multiple times in layout/activity_career_guidance.xml: [layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepTitle, layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepTitle] [DuplicateIncludedIds]
+                <include
+                ^
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step.xml:43: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step.xml defines @+id/stepTitle
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step_last.xml:43: Defined here, included via layout/activity_career_guidance.xml => layout/item_journey_step_last.xml defines @+id/stepTitle
+
+   Explanation for issues of type "DuplicateIncludedIds":
+   It's okay for two independent layouts to use the same ids. However, if
+   layouts are combined with include tags, then the id's need to be unique
+   within any chain of included layouts, or Activity#findViewById() can return
+   an unexpected view.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:14: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 34
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdk specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdk is
+   less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdk to the highest available value. Then
+   test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\SplashActivity.java:23: Warning: The application should not provide its own launch screen [CustomSplashScreen]
+public class SplashActivity extends AppCompatActivity {
+             ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "CustomSplashScreen":
+   Starting in Android 12 (API 31+), the application's Launch Screen is
+   provided by the system and the application should not create its own,
+   otherwise the user will see two splashscreens. Please check the
+   SplashScreen class to check how the Splash Screen can be controlled and
+   customized.
+
+   https://developer.android.com/guide/topics/ui/splash-screen
+
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:9: Warning: A newer version of compileSdk than 34 is available: 37 [GradleDependency]
+    compileSdk 34
+    ~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:33: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.8.0 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:34: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.14.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.11.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:35: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.2 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:36: Warning: A newer version of androidx.recyclerview:recyclerview than 1.3.2 is available: 1.4.0 [GradleDependency]
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:38: Warning: A newer version of androidx.exifinterface:exifinterface than 1.3.7 is available: 1.4.2 [GradleDependency]
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\build.gradle:39: Warning: A newer version of androidx.swiperefreshlayout:swiperefreshlayout than 1.1.0 is available: 1.2.0 [GradleDependency]
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_profile_menu_row.xml:55: Warning: Use app:drawableStartCompat instead of android:drawableStart [UseCompatTextViewDrawableXml from androidx.appcompat]
+        android:drawableStart="@drawable/bg_dot"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseCompatTextViewDrawableXml":
+   TextView uses android: compound drawable attributes instead of app: ones
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.appcompat
+   Feedback: https://issuetracker.google.com/issues/new?component=460343
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:95: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+            <LinearLayout
+             ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:122: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+            <LinearLayout
+             ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:311: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+            <LinearLayout
+             ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:347: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+            <LinearLayout
+             ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:48: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+                <LinearLayout
+                 ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:112: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+                <LinearLayout
+                 ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step.xml:3: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_journey_step_last.xml:3: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:3: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~~~~~
+
+   Explanation for issues of type "DisableBaselineAlignment":
+   When a LinearLayout is used to distribute the space proportionally between
+   nested layouts, the baseline alignment property should be turned off to
+   make the layout computation faster.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:117: Warning: Nested weights are bad for performance [NestedWeights]
+            android:layout_weight="1"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NestedWeights":
+   Layout weights require a widget to be measured twice. When a LinearLayout
+   with non-zero weights is nested inside another LinearLayout with non-zero
+   weights, then the number of measurements increase exponentially.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_alerts.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:6: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:7: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_cv_builder.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:7: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:5: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme_NexPathSA_White) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:6: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme_NexPathSA_White) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_profile.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:5: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme_NexPathSA_White) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_settings_page.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:5: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme_NexPathSA_White) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:7: Warning: Possible overdraw: Root element paints background @color/navy with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/navy"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_page_title.xml:7: Warning: Possible overdraw: Root element paints background @color/navy with a theme that also paints a background (inferred theme is @style/Theme.NexPathSA) [Overdraw]
+    android:background="@color/navy"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_edit_profile.xml:3: Warning: The resource R.layout.activity_edit_profile appears to be unused [UnusedResources]
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_avatar_circle.xml:2: Warning: The resource R.drawable.bg_avatar_circle appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_badge_danger.xml:2: Warning: The resource R.drawable.bg_badge_danger appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_brand.xml:2: Warning: The resource R.drawable.bg_brand appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"><gradient android:angle="315" android:startColor="@color/navy_brand_start" android:endColor="@color/navy_brand_end" /></shape>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_button_outline.xml:2: Warning: The resource R.drawable.bg_button_outline appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_button_teal.xml:2: Warning: The resource R.drawable.bg_button_teal appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_circle_teal_light.xml:2: Warning: The resource R.drawable.bg_circle_teal_light appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_close.xml:2: Warning: The resource R.drawable.bg_close appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval"><solid android:color="#EEF2F6" /></shape>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_edittext.xml:2: Warning: The resource R.drawable.bg_edittext appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_header_navy.xml:2: Warning: The resource R.drawable.bg_header_navy appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_step_circle_active.xml:2: Warning: The resource R.drawable.bg_step_circle_active appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_step_circle_inactive.xml:2: Warning: The resource R.drawable.bg_step_circle_inactive appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\bg_step_line.xml:2: Warning: The resource R.drawable.bg_step_line appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\chip_background_selector.xml:2: Warning: The resource R.drawable.chip_background_selector appears to be unused [UnusedResources]
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\chip_text_color_selector.xml:2: Warning: The resource R.drawable.chip_text_color_selector appears to be unused [UnusedResources]
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\colors.xml:5: Warning: The resource R.color.navy_2 appears to be unused [UnusedResources]
+    <color name="navy_2">#0A2A55</color>
+           ~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\colors.xml:6: Warning: The resource R.color.navy_brand_start appears to be unused [UnusedResources]
+    <color name="navy_brand_start">#041735</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\colors.xml:7: Warning: The resource R.color.navy_brand_end appears to be unused [UnusedResources]
+    <color name="navy_brand_end">#092B57</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\colors.xml:55: Warning: The resource R.color.navy_dark appears to be unused [UnusedResources]
+    <color name="navy_dark">@color/navy</color>
+           ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\colors.xml:56: Warning: The resource R.color.text_primary appears to be unused [UnusedResources]
+    <color name="text_primary">@color/ink</color>
+           ~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\colors.xml:58: Warning: The resource R.color.divider appears to be unused [UnusedResources]
+    <color name="divider">@color/line</color>
+           ~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\colors.xml:60: Warning: The resource R.color.alert_icon_bg appears to be unused [UnusedResources]
+    <color name="alert_icon_bg">@color/teal_icon_bg</color>
+           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_add.xml:1: Warning: The resource R.drawable.ic_add appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_book.xml:1: Warning: The resource R.drawable.ic_book appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_bookmark_border.xml:1: Warning: The resource R.drawable.ic_bookmark_border appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_bookmark_filled.xml:1: Warning: The resource R.drawable.ic_bookmark_filled appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_calendar.xml:1: Warning: The resource R.drawable.ic_calendar appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_check.xml:1: Warning: The resource R.drawable.ic_check appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_close.xml:1: Warning: The resource R.drawable.ic_close appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_delete.xml:1: Warning: The resource R.drawable.ic_delete appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_edit.xml:1: Warning: The resource R.drawable.ic_edit appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_groups.xml:1: Warning: The resource R.drawable.ic_groups appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_help.xml:1: Warning: The resource R.drawable.ic_help appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_location.xml:1: Warning: The resource R.drawable.ic_location appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_logout.xml:1: Warning: The resource R.drawable.ic_logout appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\ic_shield.xml:1: Warning: The resource R.drawable.ic_shield appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\drawable\role_card_selector.xml:2: Warning: The resource R.drawable.role_card_selector appears to be unused [UnusedResources]
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\strings.xml:4: Warning: The resource R.string.tagline appears to be unused [UnusedResources]
+    <string name="tagline">Your Path. Your Future.</string>
+            ~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\values\styles.xml:48: Warning: The resource R.style.Text_SettingsTitle appears to be unused [UnusedResources]
+    <style name="Text.SettingsTitle" parent="">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests=true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests=true.
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:18: Warning: This LinearLayout layout or its LinearLayout parent is unnecessary [UselessParent]
+        <LinearLayout
+         ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:18: Warning: This LinearLayout layout or its LinearLayout parent is unnecessary [UselessParent]
+        <LinearLayout
+         ~~~~~~~~~~~~
+
+   Explanation for issues of type "UselessParent":
+   A layout with children that has no siblings, is not a scrollview or a root
+   layout, and does not have a background, can be removed and have its
+   children moved directly into the parent for a flatter and more efficient
+   layout hierarchy.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:3: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:3: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   The system may use the coloring of the user's chosen wallpaper and theme to
+   tint app icons. Providing a <monochrome> layer (which will be used for
+   tinting) for every adaptive icon is strongly recommended, otherwise Android
+   16 QPR 2 and above will simply tint the color version of the icon, which
+   may look unusual. Devices running earlier Android versions will (with no
+   monochrome layer) show the untinted color icon for your app, which will
+   look inconsistent.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res: Warning: Missing density variation folders in src\main\res: drawable-mdpi, drawable-xhdpi, drawable-xxhdpi [IconMissingDensityFolder]
+
+   Explanation for issues of type "IconMissingDensityFolder":
+   Icons will look best if a custom version is provided for each of the major
+   screen density classes (low, medium, high, extra-high, extra-extra-high).
+   This lint check identifies folders which are missing, such as
+   drawable-hdpi.
+
+   Low density is not really used much anymore, so this check ignores the ldpi
+   density. To force lint to include it, set the environment variable
+   ANDROID_LINT_INCLUDE_LDPI=true. For more information on current density
+   usage, see https://developer.android.com/about/dashboards
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:105: Warning: The view name (@+id/editProfileEmail) suggests this is an e-mail address, but it does not include 'textEmail' in the inputType [TextFields]
+                android:inputType="none"
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+    C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:101: id defined here
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:107: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                            android:textSize="10sp"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:69: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                            android:textSize="10sp"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:97: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                            android:textSize="10sp"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:133: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                            android:textSize="10sp"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:161: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                            android:textSize="10sp"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_profile_menu_row.xml:62: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+        android:textSize="10sp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SmallSp":
+   Avoid using sizes smaller than 11sp.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:88: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_campus_photo.xml:27: Warning: Missing contentDescription attribute on image [ContentDescription]
+        <ImageView
+         ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ApplyActivity.java:98: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        ((TextView) findViewById(R.id.textApplyTitle)).setText("Apply for " + opportunity.getTitle());
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ApplyActivity.java:98: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        ((TextView) findViewById(R.id.textApplyTitle)).setText("Apply for " + opportunity.getTitle());
+                                                               ~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CareersActivity.java:147: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            empty.setText("No matching careers, qualifications, or study fields found.");
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CourseDetailActivity.java:96: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        if (showCourse) course.setText("Course: " + offering.qualificationTitle);
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CourseDetailActivity.java:96: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        if (showCourse) course.setText("Course: " + offering.qualificationTitle);
+                                       ~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CourseDetailActivity.java:179: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        loading.setText("Loading course information from SAQA…");
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CourseDetailActivity.java:188: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            loading.setText("Couldn't load the course information from SAQA. Check your connection.");
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CvBuilderActivity.java:183: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        referencesOnRequest.setText("Write \"References available on request\"");
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CvBuilderActivity.java:288: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        remove.setText("Remove");
+                       ~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CvBuilderActivity.java:317: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            title.setText((name + " " + (i + 1)).toUpperCase(Locale.ROOT));
+                           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\CvBuilderActivity.java:317: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            title.setText((name + " " + (i + 1)).toUpperCase(Locale.ROOT));
+                                         ~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\DocumentsActivity.java:151: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    (d.isPdf() ? "PDF" : "Photo") + " • " + DocumentStore.formatSize(d.getSizeBytes())
+                    ^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ExploreActivity.java:162: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            ((TextView) findViewById(R.id.textResultsHeader)).setText("Loading opportunities…");
+                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ExploreActivity.java:203: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        }, e -> ((TextView) findViewById(R.id.textResultsHeader)).setText("Could not load opportunities."));
+                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ExploreActivity.java:225: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        ((TextView) findViewById(R.id.textResultsCount)).setText(results.size() + " found");
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ExploreActivity.java:225: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        ((TextView) findViewById(R.id.textResultsCount)).setText(results.size() + " found");
+                                                                                  ~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ExploreActivity.java:245: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        more.setText("SHOW MORE (" + left + " more)");
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ExploreActivity.java:245: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        more.setText("SHOW MORE (" + left + " more)");
+                     ~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\ExploreActivity.java:245: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        more.setText("SHOW MORE (" + left + " more)");
+                                            ~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\InstitutionDetailActivity.java:83: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        ((TextView) row.findViewById(R.id.instMeta)).setText(institution.getType() + "\n📍 "
+                                                             ^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\InstitutionDetailActivity.java:109: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            ((TextView) item.findViewById(R.id.photoCredit)).setText("📷 " + photo.author + " · " + photo.license
+                                                                     ^
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\InstitutionDetailActivity.java:110: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    + " · Wikimedia Commons");
+                      ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\InstitutionDetailActivity.java:115: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                if (!loaded) status.setText("Photo unavailable offline");
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\util\InstitutionViews.java:48: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        ((TextView) row.findViewById(R.id.instMeta)).setText(i.getType() + "\n📍 " + location(i) + campuses);
+                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\MainActivity.java:116: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        ((TextView) findViewById(R.id.textGreetingName)).setText(user.getFullName() + " 👋");
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\MainActivity.java:170: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            ((TextView) findViewById(R.id.textHeroDeadline)).setText("Closing: " + Deadlines.label(top));
+                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\MainActivity.java:170: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            ((TextView) findViewById(R.id.textHeroDeadline)).setText("Closing: " + Deadlines.label(top));
+                                                                     ~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\MainActivity.java:176: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        ((TextView) findViewById(R.id.textMatchCount)).setText(ranked.size() + " found");
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\MainActivity.java:176: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        ((TextView) findViewById(R.id.textMatchCount)).setText(ranked.size() + " found");
+                                                                               ~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\MarksActivity.java:320: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        hint.setText("Check each mark against your report. Clear a box to skip that subject.");
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\NotificationSettingsActivity.java:67: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        test.setText("Test device notifications");
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\OnboardingActivity.java:139: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            ((TextView) findViewById(R.id.textStep)).setText("Edit profile");
+                                                             ~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\OnboardingActivity.java:140: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            ((TextView) findViewById(R.id.textTitle)).setText("Edit your profile");
+                                                              ~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\OnboardingActivity.java:142: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    "Update your details and your recommendations will refresh.");
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\OnboardingActivity.java:145: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            ((Button) findViewById(R.id.btnContinue)).setText("SAVE CHANGES");
+                                                              ~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\OnboardingActivity.java:172: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        Runnable updateCount = () -> bioCount.setText(editBio.length() + " / " + BIO_MAX);
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\util\OpportunityCards.java:53: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            ((TextView) card.findViewById(R.id.opTag)).setText(o.getIcon() + "  " + o.getType());
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\util\OpportunityCards.java:78: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            ((TextView) card.findViewById(R.id.opLocation)).setText("📍 " + o.getLocation());
+                                                                    ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\util\OpportunityCards.java:82: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                deadlineView.setText("⏳ " + Deadlines.label(o));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\util\OpportunityCards.java:85: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                deadlineView.setText("⏳ " + o.getDeadline());
+                                     ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\OpportunityDetailActivity.java:101: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        ((TextView) findViewById(R.id.detailTitle)).setText(opportunity.getIcon() + "  " + opportunity.getTitle());
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\util\Ui.java:230: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        rule.setText((passed ? "✓ " : "○ ") + label);
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\VerifyEmailActivity.java:109: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                resend.setText("Resend verification email (" + (left / 1000 + 1) + "s)");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\VerifyEmailActivity.java:109: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                resend.setText("Resend verification email (" + (left / 1000 + 1) + "s)");
+                                                                ~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\VerifyEmailActivity.java:109: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                resend.setText("Resend verification email (" + (left / 1000 + 1) + "s)");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\java\com\nexpathsa\app\VerifyEmailActivity.java:114: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                resend.setText("Resend verification email");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:43: Warning: Hardcoded string "Complete the application below. The submission is stored with your NexPathSA account on this device.", should use @string resource [HardcodedText]
+                    android:text="Complete the application below. The submission is stored with your NexPathSA account on this device." />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:51: Warning: Hardcoded string "Full name", should use @string resource [HardcodedText]
+                android:text="Full name" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:57: Warning: Hardcoded string "Your full name", should use @string resource [HardcodedText]
+                android:hint="Your full name"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:68: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+                android:text="Email" />
+                ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:74: Warning: Hardcoded string "Your email", should use @string resource [HardcodedText]
+                android:hint="Your email"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:85: Warning: Hardcoded string "Phone number", should use @string resource [HardcodedText]
+                android:text="Phone number" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:91: Warning: Hardcoded string "e.g. 071 234 5678", should use @string resource [HardcodedText]
+                android:hint="e.g. 071 234 5678"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:102: Warning: Hardcoded string "Cover letter / motivation", should use @string resource [HardcodedText]
+                android:text="Cover letter / motivation" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:108: Warning: Hardcoded string "Tell the provider why you are interested and why you should be considered.", should use @string resource [HardcodedText]
+                android:hint="Tell the provider why you are interested and why you should be considered."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:121: Warning: Hardcoded string "CV / supporting document", should use @string resource [HardcodedText]
+                android:text="CV / supporting document" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:134: Warning: Hardcoded string "CHOOSE FILE", should use @string resource [HardcodedText]
+                        android:text="CHOOSE FILE"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:145: Warning: Hardcoded string "No file selected", should use @string resource [HardcodedText]
+                        android:text="No file selected"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:156: Warning: Hardcoded string "I confirm that the information I provide is accurate and I consent to this application being recorded by NexPathSA.", should use @string resource [HardcodedText]
+                    android:text="I confirm that the information I provide is accurate and I consent to this application being recorded by NexPathSA."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_apply.xml:165: Warning: Hardcoded string "SUBMIT APPLICATION", should use @string resource [HardcodedText]
+                    android:text="SUBMIT APPLICATION" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:42: Warning: Hardcoded string "Your Career Journey", should use @string resource [HardcodedText]
+                    android:text="Your Career Journey" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_career_guidance.xml:90: Warning: Hardcoded string "Recommended for you", should use @string resource [HardcodedText]
+                    android:text="Recommended for you" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:37: Warning: Hardcoded string "📘", should use @string resource [HardcodedText]
+                android:text="📘"
+                ~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:49: Warning: Hardcoded string "Subject Guidance", should use @string resource [HardcodedText]
+                    android:text="Subject Guidance"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:57: Warning: Hardcoded string "See what your subjects and marks open up", should use @string resource [HardcodedText]
+                    android:text="See what your subjects and marks open up"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:65: Warning: Hardcoded string "Open", should use @string resource [HardcodedText]
+                android:contentDescription="Open"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:84: Warning: Hardcoded string "Search", should use @string resource [HardcodedText]
+                android:contentDescription="Search"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:96: Warning: Hardcoded string "Search careers, qualifications, study fields...", should use @string resource [HardcodedText]
+                android:hint="Search careers, qualifications, study fields..."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_careers.xml:109: Warning: Hardcoded string "Explore careers and study programmes", should use @string resource [HardcodedText]
+            android:text="Explore careers and study programmes"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:62: Warning: Hardcoded string "Institution logo", should use @string resource [HardcodedText]
+                            android:contentDescription="Institution logo"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:79: Warning: Hardcoded string "STUDY AT", should use @string resource [HardcodedText]
+                            android:text="STUDY AT"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:163: Warning: Hardcoded string "About this course", should use @string resource [HardcodedText]
+                    android:text="About this course" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:179: Warning: Hardcoded string "Loading course information from SAQA…", should use @string resource [HardcodedText]
+                    android:text="Loading course information from SAQA…"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:201: Warning: Hardcoded string "Where to study", should use @string resource [HardcodedText]
+                    android:text="Where to study" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:208: Warning: Hardcoded string "Tap an institution to see its course.", should use @string resource [HardcodedText]
+                    android:text="Tap an institution to see its course."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:236: Warning: Hardcoded string "VISIT WEBSITE 🌐", should use @string resource [HardcodedText]
+                    android:text="VISIT WEBSITE 🌐"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_course_detail.xml:248: Warning: Hardcoded string "VIEW ON SAQA", should use @string resource [HardcodedText]
+                    android:text="VIEW ON SAQA"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_cv_builder.xml:45: Warning: Hardcoded string "SAVE DRAFT", should use @string resource [HardcodedText]
+            android:text="SAVE DRAFT" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_cv_builder.xml:54: Warning: Hardcoded string "CREATE PDF CV", should use @string resource [HardcodedText]
+            android:text="CREATE PDF CV" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:35: Warning: Hardcoded string "Add a document", should use @string resource [HardcodedText]
+                    android:text="Add a document" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:42: Warning: Hardcoded string "Upload a photo or PDF of your marks, CV, ID or certificates (up to 15 MB). Keep them here to attach to applications.", should use @string resource [HardcodedText]
+                    android:text="Upload a photo or PDF of your marks, CV, ID or certificates (up to 15 MB). Keep them here to attach to applications." />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:61: Warning: Hardcoded string "UPLOAD FILE", should use @string resource [HardcodedText]
+                        android:text="UPLOAD FILE" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:72: Warning: Hardcoded string "TAKE PHOTO 📷", should use @string resource [HardcodedText]
+                        android:text="TAKE PHOTO 📷" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:94: Warning: Hardcoded string "📝", should use @string resource [HardcodedText]
+                    android:text="📝"
+                    ~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:107: Warning: Hardcoded string "Create my CV", should use @string resource [HardcodedText]
+                        android:text="Create my CV"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:116: Warning: Hardcoded string "Answer a few questions and download a PDF CV", should use @string resource [HardcodedText]
+                        android:text="Answer a few questions and download a PDF CV"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:136: Warning: Hardcoded string "Tap a document to attach it to your application.", should use @string resource [HardcodedText]
+                android:text="Tap a document to attach it to your application."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_documents.xml:176: Warning: Hardcoded string "Documents are stored privately on this phone and included in your Google backup.", should use @string resource [HardcodedText]
+                android:text="Documents are stored privately on this phone and included in your Google backup."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:40: Warning: Hardcoded string "Search", should use @string resource [HardcodedText]
+                    android:contentDescription="Search"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:51: Warning: Hardcoded string "Search opportunities, fields, providers...", should use @string resource [HardcodedText]
+                    android:hint="Search opportunities, fields, providers..."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:65: Warning: Hardcoded string "SEARCH", should use @string resource [HardcodedText]
+                    android:text="SEARCH"
+                    ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:105: Warning: Hardcoded string "🏛️ Explore higher education", should use @string resource [HardcodedText]
+                        android:text="🏛️ Explore higher education" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:113: Warning: Hardcoded string "See all ›", should use @string resource [HardcodedText]
+                        android:text="See all ›"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:123: Warning: Hardcoded string "Universities, private colleges and TVET colleges across South Africa", should use @string resource [HardcodedText]
+                    android:text="Universities, private colleges and TVET colleges across South Africa"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:182: Warning: Hardcoded string "SHOW MORE", should use @string resource [HardcodedText]
+                android:text="SHOW MORE"
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_explore.xml:188: Warning: Hardcoded string "No opportunities match your search. Try another keyword such as technology, bursary, internship, finance, education or KwaZulu-Natal.", should use @string resource [HardcodedText]
+                android:text="No opportunities match your search. Try another keyword such as technology, bursary, internship, finance, education or KwaZulu-Natal."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:30: Warning: Hardcoded string "NexPathSA", should use @string resource [HardcodedText]
+                android:contentDescription="NexPathSA"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:39: Warning: Hardcoded string "Welcome Back!", should use @string resource [HardcodedText]
+                android:text="Welcome Back!"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:58: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+                android:text="Email" />
+                ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:63: Warning: Hardcoded string "Enter your email", should use @string resource [HardcodedText]
+                android:hint="Enter your email"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:79: Warning: Hardcoded string "Password", should use @string resource [HardcodedText]
+                android:text="Password" />
+                ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:88: Warning: Hardcoded string "Enter your password", should use @string resource [HardcodedText]
+                    android:hint="Enter your password"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:100: Warning: Hardcoded string "Show password", should use @string resource [HardcodedText]
+                    android:contentDescription="Show password"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:116: Warning: Hardcoded string "LOGIN", should use @string resource [HardcodedText]
+                android:text="LOGIN" />
+                ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:125: Warning: Hardcoded string "Forgot Password?", should use @string resource [HardcodedText]
+                android:text="Forgot Password?" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:145: Warning: Hardcoded string "OR", should use @string resource [HardcodedText]
+                    android:text="OR"
+                    ~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:167: Warning: Hardcoded string "Don't have an account? ", should use @string resource [HardcodedText]
+                    android:text="Don't have an account? "
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:176: Warning: Hardcoded string "Sign Up", should use @string resource [HardcodedText]
+                    android:text="Sign Up" />
+                    ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:43: Warning: Hardcoded string "Profile", should use @string resource [HardcodedText]
+                        android:contentDescription="Profile"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:45: Warning: Hardcoded string "☰", should use @string resource [HardcodedText]
+                        android:text="☰"
+                        ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:75: Warning: Hardcoded string "Let's plan your future.", should use @string resource [HardcodedText]
+                            android:text="Let's plan your future."
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:86: Warning: Hardcoded string "Alerts", should use @string resource [HardcodedText]
+                        android:contentDescription="Alerts"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:131: Warning: Hardcoded string "Search", should use @string resource [HardcodedText]
+                    android:contentDescription="Search"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:142: Warning: Hardcoded string "Search all opportunities...", should use @string resource [HardcodedText]
+                    android:hint="Search all opportunities..."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:156: Warning: Hardcoded string "SEARCH", should use @string resource [HardcodedText]
+                    android:text="SEARCH"
+                    ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:182: Warning: Hardcoded string "Recommended for you", should use @string resource [HardcodedText]
+                    android:text="Recommended for you" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:188: Warning: Hardcoded string "View all", should use @string resource [HardcodedText]
+                    android:text="View all"
+                    ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:250: Warning: Hardcoded string "VIEW →", should use @string resource [HardcodedText]
+                        android:text="VIEW →"
+                        ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:269: Warning: Hardcoded string "Discover for you", should use @string resource [HardcodedText]
+                    android:text="Discover for you" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:279: Warning: Hardcoded string "🔀 Shuffle", should use @string resource [HardcodedText]
+                    android:text="🔀 Shuffle"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:306: Warning: Hardcoded string "Explore Opportunities", should use @string resource [HardcodedText]
+                    android:text="Explore Opportunities" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_main.xml:397: Warning: Hardcoded string "More opportunities matched to you", should use @string resource [HardcodedText]
+                    android:text="More opportunities matched to you" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:28: Warning: Hardcoded string "Back", should use @string resource [HardcodedText]
+                android:contentDescription="Back"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:37: Warning: Hardcoded string "Profile setup • 1 of 1", should use @string resource [HardcodedText]
+                android:text="Profile setup • 1 of 1"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:56: Warning: Hardcoded string "Tell us about yourself", should use @string resource [HardcodedText]
+            android:text="Tell us about yourself" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:66: Warning: Hardcoded string "This helps NexPathSA find opportunities suitable for you.", should use @string resource [HardcodedText]
+            android:text="This helps NexPathSA find opportunities suitable for you." />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:81: Warning: Hardcoded string "Full Name", should use @string resource [HardcodedText]
+                android:text="Full Name" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:87: Warning: Hardcoded string "Enter your full name", should use @string resource [HardcodedText]
+                android:hint="Enter your full name"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:98: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+                android:text="Email" />
+                ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:112: Warning: Hardcoded string "Your email is your login, so it can't be changed here.", should use @string resource [HardcodedText]
+                android:text="Your email is your login, so it can't be changed here."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:122: Warning: Hardcoded string "Phone number", should use @string resource [HardcodedText]
+                android:text="Phone number" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:127: Warning: Hardcoded string "e.g. 071 234 5678", should use @string resource [HardcodedText]
+                android:hint="e.g. 071 234 5678"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:138: Warning: Hardcoded string "Date of birth", should use @string resource [HardcodedText]
+                android:text="Date of birth" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:146: Warning: Hardcoded string "Select your date of birth", should use @string resource [HardcodedText]
+                android:hint="Select your date of birth" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:154: Warning: Hardcoded string "Province", should use @string resource [HardcodedText]
+                android:text="Province" />
+                ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:174: Warning: Hardcoded string "⌄", should use @string resource [HardcodedText]
+                    android:text="⌄"
+                    ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:185: Warning: Hardcoded string "City or town", should use @string resource [HardcodedText]
+                android:text="City or town" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:190: Warning: Hardcoded string "e.g. Soweto", should use @string resource [HardcodedText]
+                android:hint="e.g. Soweto"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:201: Warning: Hardcoded string "School, college or university", should use @string resource [HardcodedText]
+                android:text="School, college or university" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:206: Warning: Hardcoded string "e.g. Soweto High School or University of Pretoria", should use @string resource [HardcodedText]
+                android:hint="e.g. Soweto High School or University of Pretoria"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:217: Warning: Hardcoded string "About me", should use @string resource [HardcodedText]
+                android:text="About me" />
+                ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:223: Warning: Hardcoded string "A few lines about your goals, e.g. for bursary applications", should use @string resource [HardcodedText]
+                android:hint="A few lines about your goals, e.g. for bursary applications"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:246: Warning: Hardcoded string "I am a...", should use @string resource [HardcodedText]
+                android:text="I am a..." />
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:304: Warning: Hardcoded string "Select the option that best describes you to continue.", should use @string resource [HardcodedText]
+            android:text="Select the option that best describes you to continue."
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:321: Warning: Hardcoded string "Education level", should use @string resource [HardcodedText]
+                android:text="Education level" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:341: Warning: Hardcoded string "⌄", should use @string resource [HardcodedText]
+                    android:text="⌄"
+                    ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:374: Warning: Hardcoded string "Your latest marks (optional)", should use @string resource [HardcodedText]
+                    android:text="Your latest marks (optional)" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:382: Warning: Hardcoded string "Enter your most recent term or final mark (0–100%). NexPathSA uses them to check minimum entry marks for careers and study programmes.", should use @string resource [HardcodedText]
+                    android:text="Enter your most recent term or final mark (0–100%). NexPathSA uses them to check minimum entry marks for careers and study programmes." />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:410: Warning: Hardcoded string "Tell us what else you are interested in...", should use @string resource [HardcodedText]
+                android:hint="Tell us what else you are interested in..."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_onboarding.xml:421: Warning: Hardcoded string "CONTINUE →", should use @string resource [HardcodedText]
+                android:text="CONTINUE →" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:67: Warning: Hardcoded string "TYPE", should use @string resource [HardcodedText]
+                            android:text="TYPE"
+                            ~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:95: Warning: Hardcoded string "FIELD", should use @string resource [HardcodedText]
+                            android:text="FIELD"
+                            ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:131: Warning: Hardcoded string "LOCATION", should use @string resource [HardcodedText]
+                            android:text="LOCATION"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:159: Warning: Hardcoded string "DEADLINE", should use @string resource [HardcodedText]
+                            android:text="DEADLINE"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:181: Warning: Hardcoded string "About this opportunity", should use @string resource [HardcodedText]
+                    android:text="About this opportunity" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:197: Warning: Hardcoded string "What you may need", should use @string resource [HardcodedText]
+                    android:text="What you may need" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:236: Warning: Hardcoded string "APPLY ON WEBSITE 🌐", should use @string resource [HardcodedText]
+                            android:text="APPLY ON WEBSITE 🌐"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:246: Warning: Hardcoded string "APPLY NOW", should use @string resource [HardcodedText]
+                            android:text="APPLY NOW" />
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_opportunity_detail.xml:263: Warning: Hardcoded string "NOT FOR ME ✕", should use @string resource [HardcodedText]
+                        android:text="NOT FOR ME ✕"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_profile.xml:41: Warning: Hardcoded string "Home", should use @string resource [HardcodedText]
+                        android:contentDescription="Home"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_profile.xml:43: Warning: Hardcoded string "☰", should use @string resource [HardcodedText]
+                        android:text="☰"
+                        ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_profile.xml:53: Warning: Hardcoded string "Settings", should use @string resource [HardcodedText]
+                        android:contentDescription="Settings"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:29: Warning: Hardcoded string "Back", should use @string resource [HardcodedText]
+                android:contentDescription="Back"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:38: Warning: Hardcoded string "Create Account", should use @string resource [HardcodedText]
+                android:text="Create Account"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:49: Warning: Hardcoded string "Create your NexPathSA account and start planning your future.", should use @string resource [HardcodedText]
+                android:text="Create your NexPathSA account and start planning your future." />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:57: Warning: Hardcoded string "Full Name", should use @string resource [HardcodedText]
+                android:text="Full Name" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:62: Warning: Hardcoded string "Enter your full name", should use @string resource [HardcodedText]
+                android:hint="Enter your full name"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:78: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+                android:text="Email" />
+                ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:83: Warning: Hardcoded string "Enter your email", should use @string resource [HardcodedText]
+                android:hint="Enter your email"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:99: Warning: Hardcoded string "Password", should use @string resource [HardcodedText]
+                android:text="Password" />
+                ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:108: Warning: Hardcoded string "Create a strong password", should use @string resource [HardcodedText]
+                    android:hint="Create a strong password"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:120: Warning: Hardcoded string "Show password", should use @string resource [HardcodedText]
+                    android:contentDescription="Show password"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:136: Warning: Hardcoded string "Create a strong password", should use @string resource [HardcodedText]
+                    android:text="Create a strong password"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:223: Warning: Hardcoded string "Confirm Password", should use @string resource [HardcodedText]
+                android:text="Confirm Password" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:232: Warning: Hardcoded string "Confirm your password", should use @string resource [HardcodedText]
+                    android:hint="Confirm your password"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:244: Warning: Hardcoded string "Show password", should use @string resource [HardcodedText]
+                    android:contentDescription="Show password"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:260: Warning: Hardcoded string "CREATE ACCOUNT", should use @string resource [HardcodedText]
+                android:text="CREATE ACCOUNT" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:273: Warning: Hardcoded string "Already have an account? ", should use @string resource [HardcodedText]
+                    android:text="Already have an account? "
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:282: Warning: Hardcoded string "Login", should use @string resource [HardcodedText]
+                    android:text="Login" />
+                    ~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_splash.xml:22: Warning: Hardcoded string "NexPathSA logo", should use @string resource [HardcodedText]
+        android:contentDescription="NexPathSA logo"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_splash.xml:61: Warning: Hardcoded string "Loading...", should use @string resource [HardcodedText]
+        android:text="Loading..."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:21: Warning: Hardcoded string "✉️", should use @string resource [HardcodedText]
+            android:text="✉️"
+            ~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:30: Warning: Hardcoded string "Verify your email", should use @string resource [HardcodedText]
+            android:text="Verify your email"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:46: Warning: Hardcoded string "Can't find it? Check your spam or promotions folder. The link opens in your browser; come back here afterwards.", should use @string resource [HardcodedText]
+            android:text="Can't find it? Check your spam or promotions folder. The link opens in your browser; come back here afterwards." />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:61: Warning: Hardcoded string "I'VE VERIFIED MY EMAIL", should use @string resource [HardcodedText]
+            android:text="I'VE VERIFIED MY EMAIL" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:68: Warning: Hardcoded string "OPEN EMAIL APP", should use @string resource [HardcodedText]
+            android:text="OPEN EMAIL APP" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:77: Warning: Hardcoded string "Resend verification email", should use @string resource [HardcodedText]
+            android:text="Resend verification email" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_verify_email.xml:86: Warning: Hardcoded string "Use a different account", should use @string resource [HardcodedText]
+            android:text="Use a different account" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_change_password.xml:18: Warning: Hardcoded string "Create a new strong password. Your new password must meet all five requirements.", should use @string resource [HardcodedText]
+            android:text="Create a new strong password. Your new password must meet all five requirements." />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_change_password.xml:26: Warning: Hardcoded string "Current password", should use @string resource [HardcodedText]
+                android:text="Current password" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_change_password.xml:31: Warning: Hardcoded string "Current password", should use @string resource [HardcodedText]
+                android:hint="Current password"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_change_password.xml:41: Warning: Hardcoded string "New password", should use @string resource [HardcodedText]
+                android:text="New password" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_change_password.xml:46: Warning: Hardcoded string "New strong password", should use @string resource [HardcodedText]
+                android:hint="New strong password"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_change_password.xml:111: Warning: Hardcoded string "Confirm new password", should use @string resource [HardcodedText]
+                android:text="Confirm new password" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_change_password.xml:116: Warning: Hardcoded string "Confirm new password", should use @string resource [HardcodedText]
+                android:hint="Confirm new password"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_contact_support.xml:18: Warning: Hardcoded string "Tell the support team what you need help with.", should use @string resource [HardcodedText]
+            android:text="Tell the support team what you need help with." />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_contact_support.xml:26: Warning: Hardcoded string "Subject", should use @string resource [HardcodedText]
+                android:text="Subject" />
+                ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_contact_support.xml:31: Warning: Hardcoded string "e.g. I cannot save an opportunity", should use @string resource [HardcodedText]
+                android:hint="e.g. I cannot save an opportunity"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_contact_support.xml:41: Warning: Hardcoded string "Message", should use @string resource [HardcodedText]
+                android:text="Message" />
+                ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_contact_support.xml:46: Warning: Hardcoded string "Describe what happened...", should use @string resource [HardcodedText]
+                android:hint="Describe what happened..."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_document_details.xml:16: Warning: Hardcoded string "Name", should use @string resource [HardcodedText]
+        android:text="Name" />
+        ~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_document_details.xml:21: Warning: Hardcoded string "e.g. Grade 12 June results", should use @string resource [HardcodedText]
+        android:hint="e.g. Grade 12 June results"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_document_details.xml:32: Warning: Hardcoded string "Type of document", should use @string resource [HardcodedText]
+        android:text="Type of document" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_document_details.xml:52: Warning: Hardcoded string "⌄", should use @string resource [HardcodedText]
+            android:text="⌄"
+            ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_report_problem.xml:18: Warning: Hardcoded string "Help us reproduce the problem. Include the screen and what you expected to happen.", should use @string resource [HardcodedText]
+            android:text="Help us reproduce the problem. Include the screen and what you expected to happen." />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_report_problem.xml:26: Warning: Hardcoded string "Problem", should use @string resource [HardcodedText]
+                android:text="Problem" />
+                ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_report_problem.xml:31: Warning: Hardcoded string "Describe the problem...", should use @string resource [HardcodedText]
+                android:hint="Describe the problem..."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\dialog_report_problem.xml:43: Warning: Hardcoded string "Screen", should use @string resource [HardcodedText]
+                android:text="Screen" />
+                ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_campus_photo.xml:23: Warning: Hardcoded string "Loading photo…", should use @string resource [HardcodedText]
+            android:text="Loading photo…"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_career_result.xml:28: Warning: Hardcoded string "Career", should use @string resource [HardcodedText]
+            android:text="Career"
+            ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_checklist_row.xml:14: Warning: Hardcoded string "•", should use @string resource [HardcodedText]
+        android:text="•"
+        ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_course_offering.xml:35: Warning: Hardcoded string "Institution logo", should use @string resource [HardcodedText]
+            android:contentDescription="Institution logo"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_document.xml:32: Warning: Hardcoded string "Preview", should use @string resource [HardcodedText]
+            android:contentDescription="Preview"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_document.xml:82: Warning: Hardcoded string "More actions", should use @string resource [HardcodedText]
+        android:contentDescription="More actions"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_document.xml:84: Warning: Hardcoded string "⋮", should use @string resource [HardcodedText]
+        android:text="⋮"
+        ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_faq.xml:33: Warning: Hardcoded string "⌄", should use @string resource [HardcodedText]
+            android:text="⌄"
+            ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_institution_card.xml:33: Warning: Hardcoded string "Institution logo", should use @string resource [HardcodedText]
+            android:contentDescription="Institution logo"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_institution_row.xml:33: Warning: Hardcoded string "Institution logo", should use @string resource [HardcodedText]
+            android:contentDescription="Institution logo"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_opportunity.xml:88: Warning: Hardcoded string "VIEW", should use @string resource [HardcodedText]
+            android:text="VIEW" />
+            ~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_opportunity.xml:100: Warning: Hardcoded string "✓ Applied", should use @string resource [HardcodedText]
+            android:text="✓ Applied"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_profile_menu_row.xml:71: Warning: Hardcoded string "›", should use @string resource [HardcodedText]
+        android:text="›"
+        ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_search_field.xml:8: Warning: Hardcoded string "Search by name, city or province", should use @string resource [HardcodedText]
+    android:hint="Search by name, city or province"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_subject_mark.xml:23: Warning: Hardcoded string "—", should use @string resource [HardcodedText]
+        android:hint="—"
+        ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\item_subject_mark.xml:34: Warning: Hardcoded string "%", should use @string resource [HardcodedText]
+        android:text="%"
+        ~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:29: Warning: Hardcoded string "Home", should use @string resource [HardcodedText]
+            android:contentDescription="Home"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:37: Warning: Hardcoded string "Home", should use @string resource [HardcodedText]
+            android:text="Home"
+            ~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:58: Warning: Hardcoded string "Explore", should use @string resource [HardcodedText]
+            android:contentDescription="Explore"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:66: Warning: Hardcoded string "Explore", should use @string resource [HardcodedText]
+            android:text="Explore"
+            ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:88: Warning: Hardcoded string "Careers", should use @string resource [HardcodedText]
+            android:contentDescription="Careers"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:96: Warning: Hardcoded string "Careers", should use @string resource [HardcodedText]
+            android:text="Careers"
+            ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:117: Warning: Hardcoded string "Alerts", should use @string resource [HardcodedText]
+            android:contentDescription="Alerts"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:125: Warning: Hardcoded string "Alerts", should use @string resource [HardcodedText]
+            android:text="Alerts"
+            ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:146: Warning: Hardcoded string "Profile", should use @string resource [HardcodedText]
+            android:contentDescription="Profile"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_bottom_nav.xml:154: Warning: Hardcoded string "Profile", should use @string resource [HardcodedText]
+            android:text="Profile"
+            ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\layout_page_title.xml:19: Warning: Hardcoded string "Back", should use @string resource [HardcodedText]
+        android:contentDescription="Back"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_login.xml:91: Warning: When you define paddingEnd you should probably also define paddingStart for right-to-left symmetry [RtlSymmetry]
+                    android:paddingEnd="48dp" />
+                    ~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:111: Warning: When you define paddingEnd you should probably also define paddingStart for right-to-left symmetry [RtlSymmetry]
+                    android:paddingEnd="48dp" />
+                    ~~~~~~~~~~~~~~~~~~
+C:\Users\s225133253\Desktop\NexPathSA\app\src\main\res\layout\activity_register.xml:235: Warning: When you define paddingEnd you should probably also define paddingStart for right-to-left symmetry [RtlSymmetry]
+                    android:paddingEnd="48dp" />
+                    ~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlSymmetry":
+   If you specify padding or margin on the left side of a layout, you should
+   probably also specify padding on the right side (and vice versa) for
+   right-to-left layout symmetry.
+
+0 errors, 336 warnings

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nexpathsa.app.ml.DiscoverFeedTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-20T11:05:49.753Z" hostname="M104-51" time="0.005">
+  <properties/>
+  <testcase name="candidatesSkipClosedDismissedAppliedAndSaved" classname="com.nexpathsa.app.ml.DiscoverFeedTest" time="0.004"/>
+  <testcase name="pickHandlesFewerCandidatesThanRequested" classname="com.nexpathsa.app.ml.DiscoverFeedTest" time="0.001"/>
+  <testcase name="pickReturnsDistinctOpenItemsWithoutAModel" classname="com.nexpathsa.app.ml.DiscoverFeedTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
